@@ -13,9 +13,9 @@ class CreateUsers < ActiveRecord::Migration[6.0]
       t.integer :temperature
       t.boolean :privacy_agreement
       t.string :coordinates
-      t.references :province
-      t.references :city
-      t.references :neighbourhood
+      t.string :province
+      t.string :city
+      t.string :neighbourhood
 
       t.timestamps
     end
