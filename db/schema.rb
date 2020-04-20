@@ -43,7 +43,8 @@ ActiveRecord::Schema.define(version: 2020_04_19_040809) do
     t.boolean "contact_with_sick_person"
     t.text "symptoms", default: [], array: true
     t.boolean "with_severe_illness"
-    t.string "isolation_status"
+    t.boolean "quarantined"
+    t.string "quarantined_status"
     t.string "smoking_habits"
     t.integer "temperature"
     t.boolean "privacy_agreement"

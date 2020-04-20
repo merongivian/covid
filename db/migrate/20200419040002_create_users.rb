@@ -8,14 +8,15 @@ class CreateUsers < ActiveRecord::Migration[6.0]
       t.boolean :contact_with_sick_person
       t.text :symptoms, array: true, default: []
       t.boolean :with_severe_illness
-      t.string :isolation_status
+      t.boolean :quarantined
+      t.string :quarantined_status
       t.string :smoking_habits
       t.integer :temperature
       t.boolean :privacy_agreement
       t.string :coordinates
-      t.string :province
-      t.string :city
-      t.string :neighbourhood
+      t.references :province
+      t.references :city
+      t.references :neighbourhood
 
       t.timestamps
     end

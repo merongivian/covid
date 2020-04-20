@@ -1,7 +1,19 @@
-module API
+module Api
   class UsersController < ApiController
     def index
       render json: User.all
+    end
+
+    def symptoms
+      render json: User::SYMPTOMS
+    end
+
+    def quarantined_status
+      render json: User::QUARANTINED_STATUS
+    end
+
+    def not_quarantined_status
+      render json: User::NOT_QUARANTINED_STATUS
     end
 
     def create
