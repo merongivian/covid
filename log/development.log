@@ -43,3 +43,1569 @@ Migrating to CreateProvinces (20200419040809)
   [1m[36mActiveRecord::InternalMetadata Load (40.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
   [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(3992397951921997590)[0m
   [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2020-04-20 06:14:41 +0200
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/jose/.asdf/installs/ruby/2.5.3/lib/ruby/gems/2.5.0/gems/railties-6.0.2.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/jose/.asdf/installs/ruby/2.5.3/lib/ruby/gems/2.5.0/gems/railties-6.0.2.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 9.7ms | Allocations: 490)
+Completed 200 OK in 28ms (Views: 14.4ms | ActiveRecord: 0.0ms | Allocations: 3321)
+
+
+Started GET "/" for ::1 at 2020-04-20 07:13:56 +0200
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+Completed 406 Not Acceptable in 28ms (ActiveRecord: 0.0ms | Allocations: 2507)
+
+
+  
+ActionController::MissingExactTemplate (PagesController#index is missing a template for request formats: text/html):
+  
+actionpack (6.0.2.2) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (6.0.2.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (6.0.2.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (6.0.2.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.0.2.2) lib/abstract_controller/base.rb:196:in `process_action'
+actionpack (6.0.2.2) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.0.2.2) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.0.2.2) lib/active_support/callbacks.rb:112:in `block in run_callbacks'
+react-rails (2.6.1) lib/react/rails/controller_lifecycle.rb:31:in `use_react_component_helper'
+activesupport (6.0.2.2) lib/active_support/callbacks.rb:121:in `block in run_callbacks'
+activesupport (6.0.2.2) lib/active_support/callbacks.rb:139:in `run_callbacks'
+actionpack (6.0.2.2) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.2.2) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.2.2) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.2.2) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.2.2) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.2.2) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.2.2) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.2.2) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.2.2) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.2.2) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.2.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.2.2) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.2.2) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.2.2) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.2.2) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.2.2) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.2.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.2.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.2.2) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.2.2) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.2) lib/rack/head.rb:12:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.2) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.2) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.2.2) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.2.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-04-20 07:14:34 +0200
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 2.3ms | Allocations: 367)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/jose/code/projects/covid/public/packs
+Completed 200 OK in 13891ms (Views: 13878.3ms | ActiveRecord: 0.0ms | Allocations: 1835751)
+
+
+DEPRECATION WARNING: Using `bin/rake routes` is deprecated and will be removed in Rails 6.1. Use `bin/rails routes` instead.
+ (called from load at /Users/jose/.asdf/installs/ruby/2.5.3/bin/rake:23)
+Started GET "/" for ::1 at 2020-04-20 07:19:18 +0200
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 2.6ms | Allocations: 585)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/jose/code/projects/covid/public/packs
+Completed 200 OK in 8763ms (Views: 8751.5ms | ActiveRecord: 0.0ms | Allocations: 1825772)
+
+
+Started GET "/" for ::1 at 2020-04-20 07:20:34 +0200
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 1.0ms | Allocations: 174)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/jose/code/projects/covid/public/packs
+Completed 200 OK in 6660ms (Views: 6658.4ms | ActiveRecord: 0.0ms | Allocations: 10663)
+
+
+Started GET "/" for ::1 at 2020-04-20 07:20:56 +0200
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 0.4ms | Allocations: 173)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/jose/code/projects/covid/public/packs
+Completed 200 OK in 5294ms (Views: 5292.0ms | ActiveRecord: 0.0ms | Allocations: 10655)
+
+
+Started GET "/" for ::1 at 2020-04-20 07:21:42 +0200
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 0.4ms | Allocations: 173)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/jose/code/projects/covid/public/packs
+Completed 200 OK in 5965ms (Views: 5963.3ms | ActiveRecord: 0.0ms | Allocations: 10662)
+
+
+Started GET "/" for ::1 at 2020-04-20 07:22:50 +0200
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 0.5ms | Allocations: 174)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/jose/code/projects/covid/public/packs
+Completed 200 OK in 6628ms (Views: 6625.7ms | ActiveRecord: 0.0ms | Allocations: 10666)
+
+
+Started GET "/" for ::1 at 2020-04-20 07:24:00 +0200
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 0.4ms | Allocations: 174)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/jose/code/projects/covid/public/packs
+Completed 200 OK in 6020ms (Views: 6018.3ms | ActiveRecord: 0.0ms | Allocations: 10670)
+
+
+Started GET "/" for ::1 at 2020-04-20 07:24:50 +0200
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 0.6ms | Allocations: 174)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/jose/code/projects/covid/public/packs
+Completed 200 OK in 7047ms (Views: 7045.5ms | ActiveRecord: 0.0ms | Allocations: 10669)
+
+
+Started GET "/" for ::1 at 2020-04-20 07:25:36 +0200
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 0.7ms | Allocations: 173)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/jose/code/projects/covid/public/packs
+Completed 200 OK in 6006ms (Views: 6000.4ms | ActiveRecord: 0.0ms | Allocations: 10665)
+
+
+Started GET "/" for ::1 at 2020-04-20 07:28:34 +0200
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 2.5ms | Allocations: 585)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 8487ms (Views: 8474.4ms | ActiveRecord: 0.0ms | Allocations: 1824661)
+
+
+Started GET "/" for ::1 at 2020-04-20 07:31:02 +0200
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 4.3ms | Allocations: 585)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/jose/code/projects/covid/public/packs
+Completed 200 OK in 12210ms (Views: 12196.8ms | ActiveRecord: 0.0ms | Allocations: 1836674)
+
+
+Started GET "/api/user/symptoms" for ::1 at 2020-04-20 07:31:15 +0200
+Processing by Api::UsersController#symptoms as */*
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-04-20 07:31:15 +0200
+Started GET "/api/user/quarantined_status" for ::1 at 2020-04-20 07:31:15 +0200
+Completed 200 OK in 15ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 4225)
+
+
+Processing by Api::UsersController#not_quarantined_status as */*
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 825)
+
+
+Processing by Api::UsersController#quarantined_status as */*
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 835)
+
+
+Started GET "/" for ::1 at 2020-04-20 07:32:50 +0200
+Started GET "/" for ::1 at 2020-04-20 07:32:50 +0200
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 0.4ms | Allocations: 174)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/jose/code/projects/covid/public/packs
+Completed 200 OK in 6905ms (Views: 6903.9ms | ActiveRecord: 0.0ms | Allocations: 10676)
+
+
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 0.4ms | Allocations: 174)
+Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 0.0ms | Allocations: 9229)
+
+
+Started GET "/api/user/symptoms" for ::1 at 2020-04-20 07:32:58 +0200
+Processing by Api::UsersController#symptoms as */*
+Started GET "/api/user/quarantined_status" for ::1 at 2020-04-20 07:32:58 +0200
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-04-20 07:32:58 +0200
+Processing by Api::UsersController#quarantined_status as */*
+Processing by Api::UsersController#not_quarantined_status as */*
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 821)
+
+
+Completed 200 OK in 18ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 5867)
+
+
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 2113)
+
+
+Started GET "/" for ::1 at 2020-04-20 07:33:40 +0200
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 1.6ms | Allocations: 173)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/jose/code/projects/covid/public/packs
+Completed 200 OK in 7480ms (Views: 7476.2ms | ActiveRecord: 0.0ms | Allocations: 10666)
+
+
+Started GET "/" for ::1 at 2020-04-20 07:34:16 +0200
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 0.9ms | Allocations: 174)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/jose/code/projects/covid/public/packs
+Completed 200 OK in 8587ms (Views: 8583.0ms | ActiveRecord: 0.0ms | Allocations: 10672)
+
+
+Started GET "/api/user/symptoms" for ::1 at 2020-04-20 07:34:26 +0200
+Started GET "/api/user/quarantined_status" for ::1 at 2020-04-20 07:34:26 +0200
+Processing by Api::UsersController#symptoms as */*
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-04-20 07:34:26 +0200
+Processing by Api::UsersController#quarantined_status as */*
+Completed 200 OK in 14ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 4393)
+
+
+Completed 200 OK in 7ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 2128)
+
+
+Processing by Api::UsersController#not_quarantined_status as */*
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 958)
+
+
+Started GET "/" for ::1 at 2020-04-20 07:38:29 +0200
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 1.1ms | Allocations: 174)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/jose/code/projects/covid/public/packs
+Completed 200 OK in 7971ms (Views: 7967.2ms | ActiveRecord: 0.0ms | Allocations: 10669)
+
+
+Started GET "/api/user/symptoms" for ::1 at 2020-04-20 07:38:38 +0200
+Started GET "/api/user/quarantined_status" for ::1 at 2020-04-20 07:38:38 +0200
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-04-20 07:38:38 +0200
+Processing by Api::UsersController#symptoms as */*
+Processing by Api::UsersController#quarantined_status as */*
+Processing by Api::UsersController#not_quarantined_status as */*
+Completed 200 OK in 23ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 3655)
+
+
+Completed 200 OK in 22ms (Views: 1.4ms | ActiveRecord: 0.0ms | Allocations: 3005)
+
+
+Completed 200 OK in 18ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 2324)
+
+
+Started GET "/" for ::1 at 2020-04-20 07:39:14 +0200
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 0.5ms | Allocations: 173)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/jose/code/projects/covid/public/packs
+Completed 200 OK in 6788ms (Views: 6786.8ms | ActiveRecord: 0.0ms | Allocations: 10661)
+
+
+Started GET "/" for ::1 at 2020-04-20 07:39:47 +0200
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 0.5ms | Allocations: 173)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/jose/code/projects/covid/public/packs
+Completed 200 OK in 6650ms (Views: 6648.3ms | ActiveRecord: 0.0ms | Allocations: 10662)
+
+
+Started GET "/api/user/symptoms" for ::1 at 2020-04-20 07:40:06 +0200
+Processing by Api::UsersController#symptoms as */*
+Completed 200 OK in 15ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 2209)
+
+
+Started GET "/api/user/symptoms" for ::1 at 2020-04-20 07:40:44 +0200
+Processing by Api::UsersController#symptoms as */*
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 894)
+
+
+Started GET "/" for ::1 at 2020-04-20 07:43:15 +0200
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 0.7ms | Allocations: 173)
+[Webpacker] Compiling…
+Started GET "/api/user/symptoms" for ::1 at 2020-04-20 07:43:17 +0200
+[Webpacker] Compiled all packs in /Users/jose/code/projects/covid/public/packs
+Completed 200 OK in 9516ms (Views: 9514.4ms | ActiveRecord: 0.0ms | Allocations: 13535)
+
+
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-04-20 07:43:25 +0200
+Started GET "/" for ::1 at 2020-04-20 07:43:25 +0200
+Started GET "/api/user/quarantined_status" for ::1 at 2020-04-20 07:43:25 +0200
+Processing by Api::UsersController#symptoms as */*
+Processing by Api::UsersController#not_quarantined_status as */*
+Completed 200 OK in 10ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 3921)
+
+
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 2453)
+
+
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 0.5ms | Allocations: 173)
+Completed 200 OK in 23ms (Views: 21.7ms | ActiveRecord: 0.0ms | Allocations: 10068)
+
+
+Processing by Api::UsersController#quarantined_status as */*
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 838)
+
+
+Started GET "/api/user/symptoms" for ::1 at 2020-04-20 07:43:26 +0200
+Processing by Api::UsersController#symptoms as */*
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 896)
+
+
+Started GET "/api/user/quarantined_status" for ::1 at 2020-04-20 07:43:26 +0200
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-04-20 07:43:26 +0200
+Processing by Api::UsersController#quarantined_status as */*
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 835)
+
+
+Processing by Api::UsersController#not_quarantined_status as */*
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 825)
+
+
+Started GET "/" for ::1 at 2020-04-20 07:43:45 +0200
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 1.2ms | Allocations: 173)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/jose/code/projects/covid/public/packs
+Completed 200 OK in 9971ms (Views: 9969.4ms | ActiveRecord: 0.0ms | Allocations: 10684)
+
+
+Started GET "/api/user/symptoms" for ::1 at 2020-04-20 07:43:56 +0200
+Started GET "/api/user/quarantined_status" for ::1 at 2020-04-20 07:43:56 +0200
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-04-20 07:43:56 +0200
+Processing by Api::UsersController#symptoms as */*
+Processing by Api::UsersController#not_quarantined_status as */*
+Processing by Api::UsersController#quarantined_status as */*
+Completed 200 OK in 21ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 4599)
+
+
+Completed 200 OK in 18ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 3939)
+
+
+Completed 200 OK in 15ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 3211)
+
+
+Started GET "/" for ::1 at 2020-04-20 07:45:50 +0200
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 0.8ms | Allocations: 173)
+[Webpacker] Compiling…
+Started GET "/" for ::1 at 2020-04-20 07:45:52 +0200
+[Webpacker] Compiled all packs in /Users/jose/code/projects/covid/public/packs
+Completed 200 OK in 11746ms (Views: 11743.4ms | ActiveRecord: 0.0ms | Allocations: 11658)
+
+
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 0.6ms | Allocations: 173)
+Completed 200 OK in 21ms (Views: 19.4ms | ActiveRecord: 0.0ms | Allocations: 9217)
+
+
+Started GET "/" for ::1 at 2020-04-20 07:48:22 +0200
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 0.8ms | Allocations: 173)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/jose/code/projects/covid/public/packs
+Completed 200 OK in 7281ms (Views: 7274.7ms | ActiveRecord: 0.0ms | Allocations: 10664)
+
+
+Started GET "/" for ::1 at 2020-04-20 07:48:59 +0200
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 0.4ms | Allocations: 173)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/jose/code/projects/covid/public/packs
+Completed 200 OK in 8202ms (Views: 8200.5ms | ActiveRecord: 0.0ms | Allocations: 10674)
+
+
+Started GET "/api/user/symptoms" for ::1 at 2020-04-20 07:49:09 +0200
+Started GET "/api/user/quarantined_status" for ::1 at 2020-04-20 07:49:09 +0200
+Processing by Api::UsersController#symptoms as */*
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-04-20 07:49:09 +0200
+Processing by Api::UsersController#quarantined_status as */*
+Completed 200 OK in 16ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 4395)
+
+
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2146)
+
+
+Processing by Api::UsersController#not_quarantined_status as */*
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 823)
+
+
+Started GET "/" for ::1 at 2020-04-20 07:49:43 +0200
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 0.8ms | Allocations: 173)
+[Webpacker] Compiling…
+Started GET "/" for ::1 at 2020-04-20 07:49:49 +0200
+[Webpacker] Compiled all packs in /Users/jose/code/projects/covid/public/packs
+Completed 200 OK in 11945ms (Views: 11941.9ms | ActiveRecord: 0.0ms | Allocations: 11658)
+
+
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 0.7ms | Allocations: 173)
+Completed 200 OK in 99ms (Views: 75.8ms | ActiveRecord: 0.0ms | Allocations: 9219)
+
+
+Started GET "/api/user/symptoms" for ::1 at 2020-04-20 07:49:57 +0200
+Started GET "/api/user/quarantined_status" for ::1 at 2020-04-20 07:49:57 +0200
+Processing by Api::UsersController#symptoms as */*
+Processing by Api::UsersController#quarantined_status as */*
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-04-20 07:49:57 +0200
+Completed 200 OK in 15ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 3924)
+
+
+Completed 200 OK in 12ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 3048)
+
+
+Processing by Api::UsersController#not_quarantined_status as */*
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 823)
+
+
+Started GET "/" for ::1 at 2020-04-20 07:52:52 +0200
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 1.0ms | Allocations: 173)
+[Webpacker] Compiling…
+Started GET "/" for ::1 at 2020-04-20 07:52:57 +0200
+[Webpacker] Compiled all packs in /Users/jose/code/projects/covid/public/packs
+Completed 200 OK in 8534ms (Views: 8528.4ms | ActiveRecord: 0.0ms | Allocations: 11649)
+
+
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 0.6ms | Allocations: 173)
+Completed 200 OK in 29ms (Views: 25.9ms | ActiveRecord: 0.0ms | Allocations: 9219)
+
+
+Started GET "/api/user/symptoms" for ::1 at 2020-04-20 07:53:03 +0200
+Processing by Api::UsersController#symptoms as */*
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-04-20 07:53:03 +0200
+Started GET "/api/user/quarantined_status" for ::1 at 2020-04-20 07:53:03 +0200
+Processing by Api::UsersController#not_quarantined_status as */*
+Processing by Api::UsersController#quarantined_status as */*
+Completed 200 OK in 14ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 5943)
+
+
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2255)
+
+
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 2859)
+
+
+Started GET "/" for ::1 at 2020-04-20 07:53:09 +0200
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 0.5ms | Allocations: 173)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/jose/code/projects/covid/public/packs
+Completed 200 OK in 9271ms (Views: 9269.9ms | ActiveRecord: 0.0ms | Allocations: 10674)
+
+
+Started GET "/api/user/symptoms" for ::1 at 2020-04-20 07:53:19 +0200
+Processing by Api::UsersController#symptoms as */*
+Started GET "/api/user/quarantined_status" for ::1 at 2020-04-20 07:53:19 +0200
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-04-20 07:53:19 +0200
+Completed 200 OK in 16ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 2390)
+
+
+Processing by Api::UsersController#quarantined_status as */*
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 827)
+
+
+Processing by Api::UsersController#not_quarantined_status as */*
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 817)
+
+
+Started GET "/" for ::1 at 2020-04-20 07:53:25 +0200
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 0.5ms | Allocations: 163)
+Completed 200 OK in 37ms (Views: 34.2ms | ActiveRecord: 0.0ms | Allocations: 9074)
+
+
+Started GET "/api/user/symptoms" for ::1 at 2020-04-20 07:53:26 +0200
+Processing by Api::UsersController#symptoms as */*
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 897)
+
+
+Started GET "/api/user/quarantined_status" for ::1 at 2020-04-20 07:53:26 +0200
+Processing by Api::UsersController#quarantined_status as */*
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 836)
+
+
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-04-20 07:53:26 +0200
+Processing by Api::UsersController#not_quarantined_status as */*
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 818)
+
+
+Started GET "/" for ::1 at 2020-04-20 07:54:15 +0200
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 0.8ms | Allocations: 173)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/jose/code/projects/covid/public/packs
+Completed 200 OK in 7620ms (Views: 7617.0ms | ActiveRecord: 0.0ms | Allocations: 10668)
+
+
+Started GET "/api/user/symptoms" for ::1 at 2020-04-20 07:54:23 +0200
+Processing by Api::UsersController#symptoms as */*
+Started GET "/api/user/quarantined_status" for ::1 at 2020-04-20 07:54:23 +0200
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-04-20 07:54:23 +0200
+Processing by Api::UsersController#not_quarantined_status as */*
+Completed 200 OK in 18ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 4653)
+
+
+Processing by Api::UsersController#quarantined_status as */*
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 831)
+
+
+Completed 200 OK in 8ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 2110)
+
+
+Started GET "/" for ::1 at 2020-04-20 07:54:48 +0200
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 0.4ms | Allocations: 173)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/jose/code/projects/covid/public/packs
+Completed 200 OK in 7424ms (Views: 7422.0ms | ActiveRecord: 0.0ms | Allocations: 10666)
+
+
+Started GET "/api/user/symptoms" for ::1 at 2020-04-20 07:54:57 +0200
+Started GET "/api/user/quarantined_status" for ::1 at 2020-04-20 07:54:57 +0200
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-04-20 07:54:57 +0200
+Processing by Api::UsersController#symptoms as */*
+Processing by Api::UsersController#quarantined_status as */*
+Processing by Api::UsersController#not_quarantined_status as */*
+Completed 200 OK in 71ms (Views: 2.9ms | ActiveRecord: 0.0ms | Allocations: 4398)
+
+
+Completed 200 OK in 61ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 3730)
+
+
+Completed 200 OK in 49ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 2705)
+
+
+Started GET "/" for ::1 at 2020-04-20 07:56:02 +0200
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 0.4ms | Allocations: 173)
+[Webpacker] Compiling…
+Started GET "/" for ::1 at 2020-04-20 07:56:09 +0200
+[Webpacker] Compiled all packs in /Users/jose/code/projects/covid/public/packs
+Completed 200 OK in 10473ms (Views: 10471.5ms | ActiveRecord: 0.0ms | Allocations: 11655)
+
+
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 0.7ms | Allocations: 173)
+Completed 200 OK in 22ms (Views: 20.3ms | ActiveRecord: 0.0ms | Allocations: 9215)
+
+
+Started GET "/api/user/symptoms" for ::1 at 2020-04-20 07:56:42 +0200
+Processing by Api::UsersController#symptoms as */*
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 2197)
+
+
+Started GET "/api/user/quarantined_status" for ::1 at 2020-04-20 07:56:48 +0200
+Processing by Api::UsersController#quarantined_status as */*
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 833)
+
+
+Started GET "/api/user/quarantined_status" for ::1 at 2020-04-20 07:57:04 +0200
+Processing by Api::UsersController#quarantined_status as */*
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 834)
+
+
+Started GET "/api/user/quarantined_status" for ::1 at 2020-04-20 07:57:26 +0200
+Processing by Api::UsersController#quarantined_status as */*
+Completed 200 OK in 3ms (Views: 1.2ms | ActiveRecord: 0.0ms | Allocations: 835)
+
+
+Started GET "/" for ::1 at 2020-04-20 08:03:00 +0200
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 1.7ms | Allocations: 173)
+[Webpacker] Compiling…
+Started GET "/api/user/symptoms" for ::1 at 2020-04-20 08:03:02 +0200
+[Webpacker] Compiled all packs in /Users/jose/code/projects/covid/public/packs
+Completed 200 OK in 10408ms (Views: 10405.9ms | ActiveRecord: 0.0ms | Allocations: 13510)
+
+
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-04-20 08:03:11 +0200
+Started GET "/api/user/quarantined_status" for ::1 at 2020-04-20 08:03:11 +0200
+Started GET "/" for ::1 at 2020-04-20 08:03:12 +0200
+Processing by Api::UsersController#symptoms as */*
+Completed 200 OK in 10ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 2613)
+
+
+Processing by Api::UsersController#not_quarantined_status as */*
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 822)
+
+
+Processing by Api::UsersController#quarantined_status as */*
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 832)
+
+
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 0.6ms | Allocations: 173)
+Completed 200 OK in 26ms (Views: 24.7ms | ActiveRecord: 0.0ms | Allocations: 9841)
+
+
+Started GET "/" for ::1 at 2020-04-20 08:03:20 +0200
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 0.6ms | Allocations: 163)
+Completed 200 OK in 38ms (Views: 36.5ms | ActiveRecord: 0.0ms | Allocations: 9079)
+
+
+Started GET "/" for ::1 at 2020-04-20 08:03:57 +0200
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 0.7ms | Allocations: 173)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/jose/code/projects/covid/public/packs
+Completed 200 OK in 8634ms (Views: 8632.6ms | ActiveRecord: 0.0ms | Allocations: 10668)
+
+
+Started GET "/api/user/symptoms" for ::1 at 2020-04-20 08:04:07 +0200
+Processing by Api::UsersController#symptoms as */*
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-04-20 08:04:07 +0200
+Started GET "/api/user/quarantined_status" for ::1 at 2020-04-20 08:04:07 +0200
+Processing by Api::UsersController#not_quarantined_status as */*
+Processing by Api::UsersController#quarantined_status as */*
+Completed 200 OK in 17ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 4981)
+
+
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2255)
+
+
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2860)
+
+
+Started GET "/" for ::1 at 2020-04-22 05:26:04 +0200
+  
+LoadError (cannot load such file -- /Users/jose/code/projects/covid/config/routes.rb):
+  
+bootsnap (1.4.5) lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:54:in `load'
+bootsnap (1.4.5) lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:54:in `load'
+railties (6.0.2.2) lib/rails/application/routes_reloader.rb:41:in `block in load_paths'
+railties (6.0.2.2) lib/rails/application/routes_reloader.rb:41:in `each'
+railties (6.0.2.2) lib/rails/application/routes_reloader.rb:41:in `load_paths'
+railties (6.0.2.2) lib/rails/application/routes_reloader.rb:20:in `reload!'
+railties (6.0.2.2) lib/rails/application/routes_reloader.rb:30:in `block in updater'
+activesupport (6.0.2.2) lib/active_support/file_update_checker.rb:83:in `execute'
+railties (6.0.2.2) lib/rails/application/routes_reloader.rb:10:in `execute'
+railties (6.0.2.2) lib/rails/application/finisher.rb:197:in `block (2 levels) in <module:Finisher>'
+activesupport (6.0.2.2) lib/active_support/callbacks.rb:429:in `instance_exec'
+activesupport (6.0.2.2) lib/active_support/callbacks.rb:429:in `block in make_lambda'
+activesupport (6.0.2.2) lib/active_support/callbacks.rb:201:in `block (2 levels) in halting'
+activesupport (6.0.2.2) lib/active_support/callbacks.rb:607:in `block (2 levels) in default_terminator'
+activesupport (6.0.2.2) lib/active_support/callbacks.rb:606:in `catch'
+activesupport (6.0.2.2) lib/active_support/callbacks.rb:606:in `block in default_terminator'
+activesupport (6.0.2.2) lib/active_support/callbacks.rb:202:in `block in halting'
+activesupport (6.0.2.2) lib/active_support/callbacks.rb:514:in `block in invoke_before'
+activesupport (6.0.2.2) lib/active_support/callbacks.rb:514:in `each'
+activesupport (6.0.2.2) lib/active_support/callbacks.rb:514:in `invoke_before'
+activesupport (6.0.2.2) lib/active_support/callbacks.rb:134:in `run_callbacks'
+activesupport (6.0.2.2) lib/active_support/execution_wrapper.rb:111:in `run!'
+activesupport (6.0.2.2) lib/active_support/reloader.rb:114:in `run!'
+activesupport (6.0.2.2) lib/active_support/execution_wrapper.rb:73:in `block in run!'
+activesupport (6.0.2.2) lib/active_support/execution_wrapper.rb:70:in `tap'
+activesupport (6.0.2.2) lib/active_support/execution_wrapper.rb:70:in `run!'
+activesupport (6.0.2.2) lib/active_support/reloader.rb:63:in `run!'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-04-22 05:32:36 +0200
+  [1m[35m (3.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 3.3ms | Allocations: 585)
+Started GET "/" for ::1 at 2020-04-22 05:32:39 +0200
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 0.8ms | Allocations: 170)
+Completed 200 OK in 3024ms (Views: 3010.6ms | ActiveRecord: 0.0ms | Allocations: 2004624)
+
+
+Completed 200 OK in 1776ms (Views: 1774.0ms | ActiveRecord: 0.0ms | Allocations: 1527277)
+
+
+Started GET "/api/user/symptoms" for ::1 at 2020-04-22 05:32:42 +0200
+Started GET "/api/user/quarantined_status" for ::1 at 2020-04-22 05:32:42 +0200
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-04-22 05:32:42 +0200
+Processing by Api::UsersController#symptoms as */*
+Processing by Api::UsersController#quarantined_status as */*
+Completed 200 OK in 16ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 4096)
+
+
+Completed 200 OK in 14ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 3411)
+
+
+Processing by Api::UsersController#not_quarantined_status as */*
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 826)
+
+
+Started GET "/" for ::1 at 2020-04-22 05:33:11 +0200
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 0.5ms | Allocations: 174)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/jose/code/projects/ruby/covid/public/packs
+Completed 200 OK in 17099ms (Views: 17097.8ms | ActiveRecord: 0.0ms | Allocations: 10763)
+
+
+Started GET "/api/user/symptoms" for ::1 at 2020-04-22 05:33:28 +0200
+Started GET "/api/user/quarantined_status" for ::1 at 2020-04-22 05:33:28 +0200
+Processing by Api::UsersController#symptoms as */*
+Processing by Api::UsersController#quarantined_status as */*
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-04-22 05:33:28 +0200
+Completed 200 OK in 13ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 3971)
+
+
+Completed 200 OK in 9ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 2643)
+
+
+Processing by Api::UsersController#not_quarantined_status as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 822)
+
+
+Started GET "/api/user/symptoms" for ::1 at 2020-04-22 05:37:11 +0200
+Processing by Api::UsersController#symptoms as */*
+Completed 200 OK in 4ms (Views: 0.9ms | ActiveRecord: 0.0ms | Allocations: 887)
+
+
+Started GET "/" for ::1 at 2020-04-22 05:37:51 +0200
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 0.8ms | Allocations: 173)
+[Webpacker] Compiling…
+Started GET "/" for ::1 at 2020-04-22 05:37:54 +0200
+[Webpacker] Compiled all packs in /Users/jose/code/projects/ruby/covid/public/packs
+Completed 200 OK in 8240ms (Views: 8238.9ms | ActiveRecord: 0.0ms | Allocations: 11706)
+
+
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 0.4ms | Allocations: 174)
+Completed 200 OK in 35ms (Views: 32.7ms | ActiveRecord: 0.0ms | Allocations: 9236)
+
+
+Started GET "/api/user/symptoms" for ::1 at 2020-04-22 05:38:01 +0200
+Started GET "/api/user/quarantined_status" for ::1 at 2020-04-22 05:38:01 +0200
+Processing by Api::UsersController#symptoms as */*
+Processing by Api::UsersController#quarantined_status as */*
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-04-22 05:38:01 +0200
+Completed 200 OK in 10ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 4385)
+
+
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 2396)
+
+
+Processing by Api::UsersController#not_quarantined_status as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 812)
+
+
+Started GET "/api/user/symptoms" for ::1 at 2020-04-22 05:39:36 +0200
+Processing by Api::UsersController#symptoms as */*
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 887)
+
+
+Started GET "/" for ::1 at 2020-04-22 05:39:48 +0200
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 0.4ms | Allocations: 173)
+[Webpacker] Compiling…
+Started GET "/" for ::1 at 2020-04-22 05:39:56 +0200
+[Webpacker] Compiled all packs in /Users/jose/code/projects/ruby/covid/public/packs
+Completed 200 OK in 9254ms (Views: 9253.0ms | ActiveRecord: 0.0ms | Allocations: 12340)
+
+
+Started GET "/" for ::1 at 2020-04-22 05:39:58 +0200
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 0.4ms | Allocations: 173)
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 0.3ms | Allocations: 163)
+Completed 200 OK in 42ms (Views: 39.3ms | ActiveRecord: 0.0ms | Allocations: 17720)
+
+
+Completed 200 OK in 39ms (Views: 37.3ms | ActiveRecord: 0.0ms | Allocations: 17053)
+
+
+Started GET "/api/user/symptoms" for ::1 at 2020-04-22 05:39:59 +0200
+Processing by Api::UsersController#symptoms as */*
+Started GET "/api/user/quarantined_status" for ::1 at 2020-04-22 05:39:59 +0200
+Completed 200 OK in 11ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 3169)
+
+
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-04-22 05:39:59 +0200
+Processing by Api::UsersController#quarantined_status as */*
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 831)
+
+
+Processing by Api::UsersController#not_quarantined_status as */*
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 821)
+
+
+Started GET "/" for ::1 at 2020-04-22 05:40:03 +0200
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 1.3ms | Allocations: 163)
+Completed 200 OK in 24ms (Views: 22.1ms | ActiveRecord: 0.0ms | Allocations: 9094)
+
+
+Started GET "/api/user/symptoms" for ::1 at 2020-04-22 05:40:03 +0200
+Processing by Api::UsersController#symptoms as */*
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 891)
+
+
+Started GET "/api/user/quarantined_status" for ::1 at 2020-04-22 05:40:03 +0200
+Processing by Api::UsersController#quarantined_status as */*
+Completed 200 OK in 5ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 830)
+
+
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-04-22 05:40:03 +0200
+Processing by Api::UsersController#not_quarantined_status as */*
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 823)
+
+
+Started GET "/" for ::1 at 2020-04-22 05:40:04 +0200
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 0.3ms | Allocations: 163)
+Completed 200 OK in 23ms (Views: 20.8ms | ActiveRecord: 0.0ms | Allocations: 9090)
+
+
+Started GET "/api/user/symptoms" for ::1 at 2020-04-22 05:40:05 +0200
+Started GET "/api/user/quarantined_status" for ::1 at 2020-04-22 05:40:05 +0200
+Processing by Api::UsersController#symptoms as */*
+Processing by Api::UsersController#quarantined_status as */*
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 886)
+
+
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 825)
+
+
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-04-22 05:40:05 +0200
+Processing by Api::UsersController#not_quarantined_status as */*
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 815)
+
+
+Started GET "/" for ::1 at 2020-04-22 05:40:15 +0200
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 0.8ms | Allocations: 164)
+Completed 200 OK in 26ms (Views: 23.6ms | ActiveRecord: 0.0ms | Allocations: 9102)
+
+
+Started GET "/api/user/symptoms" for ::1 at 2020-04-22 05:40:17 +0200
+Started GET "/api/user/quarantined_status" for ::1 at 2020-04-22 05:40:17 +0200
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-04-22 05:40:17 +0200
+Processing by Api::UsersController#symptoms as */*
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 886)
+
+
+Processing by Api::UsersController#quarantined_status as */*
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 825)
+
+
+Processing by Api::UsersController#not_quarantined_status as */*
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 815)
+
+
+Started GET "/" for ::1 at 2020-04-22 05:40:27 +0200
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 1.4ms | Allocations: 163)
+Completed 200 OK in 54ms (Views: 49.6ms | ActiveRecord: 0.0ms | Allocations: 9091)
+
+
+Started GET "/api/user/symptoms" for ::1 at 2020-04-22 05:40:27 +0200
+Processing by Api::UsersController#symptoms as */*
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 882)
+
+
+Started GET "/api/user/quarantined_status" for ::1 at 2020-04-22 05:40:27 +0200
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-04-22 05:40:27 +0200
+Processing by Api::UsersController#not_quarantined_status as */*
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 811)
+
+
+Processing by Api::UsersController#quarantined_status as */*
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 821)
+
+
+Started GET "/" for ::1 at 2020-04-22 05:40:35 +0200
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 0.4ms | Allocations: 173)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/jose/code/projects/ruby/covid/public/packs
+Completed 200 OK in 6930ms (Views: 6928.5ms | ActiveRecord: 0.0ms | Allocations: 10701)
+
+
+Started GET "/api/user/symptoms" for ::1 at 2020-04-22 05:40:42 +0200
+Started GET "/api/user/quarantined_status" for ::1 at 2020-04-22 05:40:42 +0200
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-04-22 05:40:42 +0200
+Processing by Api::UsersController#symptoms as */*
+Processing by Api::UsersController#not_quarantined_status as */*
+Processing by Api::UsersController#quarantined_status as */*
+Completed 200 OK in 20ms (Views: 1.1ms | ActiveRecord: 0.0ms | Allocations: 3669)
+
+
+Completed 200 OK in 17ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 2991)
+
+
+Completed 200 OK in 16ms (Views: 0.9ms | ActiveRecord: 0.0ms | Allocations: 2314)
+
+
+Started GET "/" for ::1 at 2020-04-22 05:40:52 +0200
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 0.5ms | Allocations: 173)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/jose/code/projects/ruby/covid/public/packs
+Completed 200 OK in 7930ms (Views: 7928.5ms | ActiveRecord: 0.0ms | Allocations: 10699)
+
+
+Started GET "/api/user/symptoms" for ::1 at 2020-04-22 05:41:01 +0200
+Started GET "/api/user/quarantined_status" for ::1 at 2020-04-22 05:41:01 +0200
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-04-22 05:41:01 +0200
+Processing by Api::UsersController#symptoms as */*
+Processing by Api::UsersController#not_quarantined_status as */*
+Processing by Api::UsersController#quarantined_status as */*
+Completed 200 OK in 17ms (Views: 1.2ms | ActiveRecord: 0.0ms | Allocations: 3661)
+
+
+Completed 200 OK in 15ms (Views: 1.1ms | ActiveRecord: 0.0ms | Allocations: 2990)
+
+
+Completed 200 OK in 14ms (Views: 0.9ms | ActiveRecord: 0.0ms | Allocations: 2313)
+
+
+Started GET "/" for ::1 at 2020-04-22 05:41:15 +0200
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 0.5ms | Allocations: 163)
+Completed 200 OK in 26ms (Views: 23.9ms | ActiveRecord: 0.0ms | Allocations: 9098)
+
+
+Started GET "/api/user/symptoms" for ::1 at 2020-04-22 05:41:24 +0200
+Processing by Api::UsersController#symptoms as */*
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 887)
+
+
+Started GET "/api/user/symptoms" for ::1 at 2020-04-22 05:41:55 +0200
+Processing by Api::UsersController#symptoms as */*
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 883)
+
+
+Started GET "/api/user/symptoms" for ::1 at 2020-04-22 05:42:17 +0200
+Processing by Api::UsersController#symptoms as */*
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 886)
+
+
+Started GET "/" for ::1 at 2020-04-22 05:49:39 +0200
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 0.9ms | Allocations: 173)
+[Webpacker] Compiling…
+Started GET "/" for ::1 at 2020-04-22 05:49:41 +0200
+[Webpacker] Compiled all packs in /Users/jose/code/projects/ruby/covid/public/packs
+Completed 200 OK in 8713ms (Views: 8709.9ms | ActiveRecord: 0.0ms | Allocations: 11699)
+
+
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 0.7ms | Allocations: 173)
+Completed 200 OK in 40ms (Views: 38.6ms | ActiveRecord: 0.0ms | Allocations: 9228)
+
+
+Started GET "/api/user/quarantined_status" for ::1 at 2020-04-22 05:49:49 +0200
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-04-22 05:49:49 +0200
+Processing by Api::UsersController#quarantined_status as */*
+Completed 200 OK in 10ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 2544)
+
+
+Started GET "/api/user/symptoms" for ::1 at 2020-04-22 05:49:49 +0200
+Processing by Api::UsersController#symptoms as */*
+Completed 200 OK in 7ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 889)
+
+
+Processing by Api::UsersController#not_quarantined_status as */*
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 818)
+
+
+Started GET "/api/user/symptoms" for ::1 at 2020-04-22 05:50:03 +0200
+Processing by Api::UsersController#symptoms as */*
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 888)
+
+
+Started GET "/" for ::1 at 2020-04-22 05:50:19 +0200
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 0.3ms | Allocations: 173)
+[Webpacker] Compiling…
+Started GET "/" for ::1 at 2020-04-22 05:50:21 +0200
+[Webpacker] Compiled all packs in /Users/jose/code/projects/ruby/covid/public/packs
+Completed 200 OK in 8116ms (Views: 8115.0ms | ActiveRecord: 0.0ms | Allocations: 11705)
+
+
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 0.3ms | Allocations: 173)
+Completed 200 OK in 19ms (Views: 17.5ms | ActiveRecord: 0.0ms | Allocations: 9235)
+
+
+Started GET "/api/user/symptoms" for ::1 at 2020-04-22 05:50:27 +0200
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-04-22 05:50:27 +0200
+Started GET "/api/user/quarantined_status" for ::1 at 2020-04-22 05:50:27 +0200
+Processing by Api::UsersController#not_quarantined_status as */*
+Processing by Api::UsersController#symptoms as */*
+Completed 200 OK in 9ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 2845)
+
+
+Completed 200 OK in 7ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 2256)
+
+
+Processing by Api::UsersController#quarantined_status as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 825)
+
+
+Started GET "/" for ::1 at 2020-04-22 05:52:35 +0200
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 2.4ms | Allocations: 585)
+Completed 200 OK in 2230ms (Views: 2214.8ms | ActiveRecord: 0.0ms | Allocations: 1835209)
+
+
+Started GET "/api/user/symptoms" for ::1 at 2020-04-22 05:52:38 +0200
+Started GET "/api/user/quarantined_status" for ::1 at 2020-04-22 05:52:38 +0200
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-04-22 05:52:38 +0200
+Processing by Api::UsersController#symptoms as */*
+Completed 200 OK in 11ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 3184)
+
+
+Processing by Api::UsersController#quarantined_status as */*
+Processing by Api::UsersController#not_quarantined_status as */*
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 819)
+
+
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 829)
+
+
+Started GET "/" for ::1 at 2020-04-22 05:53:56 +0200
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 0.5ms | Allocations: 174)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/jose/code/projects/ruby/covid/public/packs
+Completed 200 OK in 7296ms (Views: 7294.0ms | ActiveRecord: 0.0ms | Allocations: 10734)
+
+
+Started GET "/api/user/symptoms" for ::1 at 2020-04-22 05:54:05 +0200
+Started GET "/api/user/quarantined_status" for ::1 at 2020-04-22 05:54:05 +0200
+Processing by Api::UsersController#symptoms as */*
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-04-22 05:54:05 +0200
+Processing by Api::UsersController#quarantined_status as */*
+Completed 200 OK in 14ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 3118)
+
+
+Completed 200 OK in 12ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 2234)
+
+
+Processing by Api::UsersController#not_quarantined_status as */*
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 817)
+
+
+Started GET "/api/user/symptoms" for ::1 at 2020-04-22 05:54:26 +0200
+Processing by Api::UsersController#symptoms as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 888)
+
+
+Started GET "/" for ::1 at 2020-04-22 05:54:52 +0200
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 0.7ms | Allocations: 173)
+[Webpacker] Compiling…
+Started GET "/" for ::1 at 2020-04-22 05:54:54 +0200
+[Webpacker] Compiled all packs in /Users/jose/code/projects/ruby/covid/public/packs
+Completed 200 OK in 7415ms (Views: 7413.6ms | ActiveRecord: 0.0ms | Allocations: 11727)
+
+
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 0.4ms | Allocations: 174)
+Completed 200 OK in 17ms (Views: 15.3ms | ActiveRecord: 0.0ms | Allocations: 9235)
+
+
+Started GET "/api/user/symptoms" for ::1 at 2020-04-22 05:55:00 +0200
+Processing by Api::UsersController#symptoms as */*
+Completed 200 OK in 7ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 2207)
+
+
+Started GET "/api/user/symptoms" for ::1 at 2020-04-22 05:55:00 +0200
+Processing by Api::UsersController#symptoms as */*
+Completed 200 OK in 4ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 894)
+
+
+Started GET "/" for ::1 at 2020-04-22 05:56:53 +0200
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 0.4ms | Allocations: 174)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/jose/code/projects/ruby/covid/public/packs
+Completed 200 OK in 6848ms (Views: 6846.5ms | ActiveRecord: 0.0ms | Allocations: 10707)
+
+
+Started GET "/api/user/symptoms" for ::1 at 2020-04-22 05:57:00 +0200
+Processing by Api::UsersController#symptoms as */*
+Completed 200 OK in 15ms (Views: 1.2ms | ActiveRecord: 0.0ms | Allocations: 2213)
+
+
+Started GET "/api/user/symptoms" for ::1 at 2020-04-22 05:57:00 +0200
+Processing by Api::UsersController#symptoms as */*
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 891)
+
+
+Started GET "/" for ::1 at 2020-04-22 05:58:20 +0200
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 0.4ms | Allocations: 173)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/jose/code/projects/ruby/covid/public/packs
+Completed 200 OK in 7104ms (Views: 7097.5ms | ActiveRecord: 0.0ms | Allocations: 10691)
+
+
+Started GET "/api/user/quarantined_status" for ::1 at 2020-04-22 05:58:28 +0200
+Processing by Api::UsersController#quarantined_status as */*
+Completed 200 OK in 21ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 2141)
+
+
+Started GET "/" for ::1 at 2020-04-22 05:58:51 +0200
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 0.8ms | Allocations: 173)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/jose/code/projects/ruby/covid/public/packs
+Completed 200 OK in 7277ms (Views: 7276.3ms | ActiveRecord: 0.0ms | Allocations: 10698)
+
+
+Started GET "/api/user/quarantined_status" for ::1 at 2020-04-22 05:58:59 +0200
+Processing by Api::UsersController#quarantined_status as */*
+Completed 200 OK in 7ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 2115)
+
+
+Started GET "/" for ::1 at 2020-04-22 05:59:24 +0200
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 0.7ms | Allocations: 173)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/jose/code/projects/ruby/covid/public/packs
+Completed 200 OK in 6873ms (Views: 6871.6ms | ActiveRecord: 0.0ms | Allocations: 10691)
+
+
+Started GET "/api/user/quarantined_status" for ::1 at 2020-04-22 05:59:32 +0200
+Processing by Api::UsersController#quarantined_status as */*
+Completed 200 OK in 8ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 2138)
+
+
+Started GET "/" for ::1 at 2020-04-22 06:00:13 +0200
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 0.7ms | Allocations: 173)
+[Webpacker] Compiling…
+Started GET "/" for ::1 at 2020-04-22 06:00:15 +0200
+[Webpacker] Compiled all packs in /Users/jose/code/projects/ruby/covid/public/packs
+Completed 200 OK in 7826ms (Views: 7823.9ms | ActiveRecord: 0.0ms | Allocations: 11707)
+
+
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 0.3ms | Allocations: 174)
+Completed 200 OK in 18ms (Views: 16.2ms | ActiveRecord: 0.0ms | Allocations: 9236)
+
+
+Started GET "/api/user/quarantined_status" for ::1 at 2020-04-22 06:00:22 +0200
+Processing by Api::UsersController#quarantined_status as */*
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 2149)
+
+
+Started GET "/" for ::1 at 2020-04-22 06:01:39 +0200
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 0.4ms | Allocations: 173)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/jose/code/projects/ruby/covid/public/packs
+Completed 200 OK in 7232ms (Views: 7231.1ms | ActiveRecord: 0.0ms | Allocations: 10690)
+
+
+Started GET "/api/user/quarantined_status" for ::1 at 2020-04-22 06:01:47 +0200
+Processing by Api::UsersController#quarantined_status as */*
+Completed 200 OK in 10ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 2115)
+
+
+Started GET "/" for ::1 at 2020-04-22 06:02:51 +0200
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 0.3ms | Allocations: 173)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/jose/code/projects/ruby/covid/public/packs
+Completed 200 OK in 7034ms (Views: 7032.8ms | ActiveRecord: 0.0ms | Allocations: 10706)
+
+
+Started GET "/api/user/symptoms" for ::1 at 2020-04-22 06:02:59 +0200
+Started GET "/api/user/quarantined_status" for ::1 at 2020-04-22 06:02:59 +0200
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-04-22 06:02:59 +0200
+Processing by Api::UsersController#symptoms as */*
+Processing by Api::UsersController#not_quarantined_status as */*
+Processing by Api::UsersController#quarantined_status as */*
+Completed 200 OK in 25ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 4315)
+
+
+Completed 200 OK in 17ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 3054)
+
+
+Completed 200 OK in 14ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 2341)
+
+
+Started GET "/" for ::1 at 2020-04-22 06:05:37 +0200
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 1.4ms | Allocations: 173)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/jose/code/projects/ruby/covid/public/packs
+Completed 200 OK in 7985ms (Views: 7980.6ms | ActiveRecord: 0.0ms | Allocations: 10707)
+
+
+Started GET "/api/user/symptoms" for ::1 at 2020-04-22 06:05:46 +0200
+Started GET "/api/user/quarantined_status" for ::1 at 2020-04-22 06:05:46 +0200
+Processing by Api::UsersController#symptoms as */*
+Processing by Api::UsersController#quarantined_status as */*
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-04-22 06:05:46 +0200
+Completed 200 OK in 21ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 5169)
+
+
+Processing by Api::UsersController#not_quarantined_status as */*
+Completed 200 OK in 14ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 2827)
+
+
+Completed 200 OK in 6ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 814)
+
+
+Started GET "/" for ::1 at 2020-04-22 06:11:08 +0200
+  [1m[35m (55.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 6.1ms | Allocations: 585)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/jose/code/projects/ruby/covid/public/packs
+Completed 200 OK in 13275ms (Views: 13256.6ms | ActiveRecord: 0.0ms | Allocations: 1836713)
+
+
+Started GET "/" for ::1 at 2020-04-22 06:11:58 +0200
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 1.0ms | Allocations: 174)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/jose/code/projects/ruby/covid/public/packs
+Completed 200 OK in 10365ms (Views: 10362.3ms | ActiveRecord: 0.0ms | Allocations: 10713)
+
+
+Started GET "/api/user/symptoms" for ::1 at 2020-04-22 06:12:10 +0200
+Started GET "/api/user/quarantined_status" for ::1 at 2020-04-22 06:12:10 +0200
+Processing by Api::UsersController#symptoms as */*
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-04-22 06:12:10 +0200
+Completed 200 OK in 22ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 3333)
+
+
+Processing by Api::UsersController#not_quarantined_status as */*
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 821)
+
+
+Processing by Api::UsersController#quarantined_status as */*
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 831)
+
+
+Started GET "/" for ::1 at 2020-04-22 06:12:28 +0200
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 0.4ms | Allocations: 173)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/jose/code/projects/ruby/covid/public/packs
+Completed 200 OK in 12525ms (Views: 12523.3ms | ActiveRecord: 0.0ms | Allocations: 10729)
+
+
+Started GET "/api/user/symptoms" for ::1 at 2020-04-22 06:12:42 +0200
+Started GET "/api/user/quarantined_status" for ::1 at 2020-04-22 06:12:42 +0200
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-04-22 06:12:42 +0200
+Processing by Api::UsersController#quarantined_status as */*
+Processing by Api::UsersController#symptoms as */*
+Processing by Api::UsersController#not_quarantined_status as */*
+Completed 200 OK in 18ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 3756)
+
+
+Completed 200 OK in 13ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 2281)
+
+
+Completed 200 OK in 14ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 2891)
+
+
+Started GET "/" for ::1 at 2020-04-22 06:13:19 +0200
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 3.5ms | Allocations: 163)
+Completed 200 OK in 76ms (Views: 69.9ms | ActiveRecord: 0.0ms | Allocations: 9091)
+
+
+Started GET "/api/user/symptoms" for ::1 at 2020-04-22 06:13:20 +0200
+Started GET "/api/user/quarantined_status" for ::1 at 2020-04-22 06:13:20 +0200
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-04-22 06:13:20 +0200
+Processing by Api::UsersController#symptoms as */*
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 890)
+
+
+Processing by Api::UsersController#quarantined_status as */*
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 829)
+
+
+Processing by Api::UsersController#not_quarantined_status as */*
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 819)
+
+
+Started GET "/" for ::1 at 2020-04-22 06:14:25 +0200
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 3.3ms | Allocations: 164)
+Completed 200 OK in 51ms (Views: 44.0ms | ActiveRecord: 0.0ms | Allocations: 9101)
+
+
+Started GET "/api/user/symptoms" for ::1 at 2020-04-22 06:14:26 +0200
+Processing by Api::UsersController#symptoms as */*
+Completed 200 OK in 5ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 886)
+
+
+Started GET "/api/user/quarantined_status" for ::1 at 2020-04-22 06:14:26 +0200
+Processing by Api::UsersController#quarantined_status as */*
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 825)
+
+
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-04-22 06:14:26 +0200
+Processing by Api::UsersController#not_quarantined_status as */*
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 815)
+
+
+Started GET "/" for ::1 at 2020-04-22 06:15:27 +0200
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 0.7ms | Allocations: 173)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/jose/code/projects/ruby/covid/public/packs
+Completed 200 OK in 9958ms (Views: 9954.8ms | ActiveRecord: 0.0ms | Allocations: 10703)
+
+
+Started GET "/api/user/symptoms" for ::1 at 2020-04-22 06:15:39 +0200
+Processing by Api::UsersController#symptoms as */*
+Started GET "/api/user/quarantined_status" for ::1 at 2020-04-22 06:15:39 +0200
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-04-22 06:15:39 +0200
+Completed 200 OK in 18ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 4232)
+
+
+Processing by Api::UsersController#quarantined_status as */*
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 825)
+
+
+Processing by Api::UsersController#not_quarantined_status as */*
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 815)
+
+
+Started GET "/" for ::1 at 2020-04-22 06:19:01 +0200
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 1.6ms | Allocations: 173)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/jose/code/projects/ruby/covid/public/packs
+Completed 200 OK in 10402ms (Views: 10399.2ms | ActiveRecord: 0.0ms | Allocations: 10713)
+
+
+Started GET "/" for ::1 at 2020-04-22 06:19:22 +0200
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 3.0ms | Allocations: 164)
+Completed 200 OK in 133ms (Views: 121.8ms | ActiveRecord: 0.0ms | Allocations: 9099)
+
+
+Started GET "/" for ::1 at 2020-04-22 06:19:50 +0200
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 11.3ms | Allocations: 585)
+Completed 200 OK in 2983ms (Views: 2969.7ms | ActiveRecord: 0.0ms | Allocations: 1835209)
+
+
+Started GET "/" for ::1 at 2020-04-22 06:20:25 +0200
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 0.3ms | Allocations: 174)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/jose/code/projects/ruby/covid/public/packs
+Completed 200 OK in 9828ms (Views: 9826.3ms | ActiveRecord: 0.0ms | Allocations: 10738)
+
+
+Started GET "/api/user/symptoms" for ::1 at 2020-04-22 06:20:36 +0200
+Started GET "/api/user/quarantined_status" for ::1 at 2020-04-22 06:20:36 +0200
+Processing by Api::UsersController#symptoms as */*
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-04-22 06:20:36 +0200
+Completed 200 OK in 29ms (Views: 2.4ms | ActiveRecord: 0.0ms | Allocations: 4434)
+
+
+Processing by Api::UsersController#quarantined_status as */*
+Completed 200 OK in 5ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 832)
+
+
+Processing by Api::UsersController#not_quarantined_status as */*
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 821)
+
+
+Started GET "/" for ::1 at 2020-04-22 06:22:48 +0200
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 0.6ms | Allocations: 173)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/jose/code/projects/ruby/covid/public/packs
+Completed 200 OK in 9460ms (Views: 9458.3ms | ActiveRecord: 0.0ms | Allocations: 10709)
+
+
+Started GET "/api/user/symptoms" for ::1 at 2020-04-22 06:22:59 +0200
+Started GET "/api/user/quarantined_status" for ::1 at 2020-04-22 06:22:59 +0200
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-04-22 06:22:59 +0200
+Processing by Api::UsersController#symptoms as */*
+Processing by Api::UsersController#quarantined_status as */*
+Processing by Api::UsersController#not_quarantined_status as */*
+Completed 200 OK in 18ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 3634)
+
+
+Completed 200 OK in 16ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 2985)
+
+
+Completed 200 OK in 12ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 2297)
+
+
+Started GET "/" for ::1 at 2020-04-22 06:24:41 +0200
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 3.3ms | Allocations: 173)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/jose/code/projects/ruby/covid/public/packs
+Completed 200 OK in 10070ms (Views: 10065.9ms | ActiveRecord: 0.0ms | Allocations: 10711)
+
+
+Started GET "/api/user/symptoms" for ::1 at 2020-04-22 06:24:53 +0200
+Started GET "/api/user/quarantined_status" for ::1 at 2020-04-22 06:24:53 +0200
+Processing by Api::UsersController#symptoms as */*
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-04-22 06:24:53 +0200
+Completed 200 OK in 23ms (Views: 1.8ms | ActiveRecord: 0.0ms | Allocations: 3204)
+
+
+Processing by Api::UsersController#quarantined_status as */*
+Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 822)
+
+
+Processing by Api::UsersController#not_quarantined_status as */*
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 812)
+
+

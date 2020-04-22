@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   resources :neighbourhoods
   resources :users
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  root to: 'pages#index'
 
   namespace :api do
     resources :users, only: [:index, :create]
