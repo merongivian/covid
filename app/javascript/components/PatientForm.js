@@ -48,11 +48,31 @@ class PatientForm extends React.Component {
         },
         {
           id: 3,
-          name: 'Manabi'
+          name: 'Manabi',
+          cities: [
+            {
+              id: 1,
+              name: 'Chone'
+            },
+            {
+              id: 2,
+              name: 'Manta'
+            }
+          ]
         },
         {
           id: 4,
-          name: 'Pastaza'
+          name: 'Pastaza',
+          cities: [
+            {
+              id: 1,
+              name: 'Chillo'
+            },
+            {
+              id: 2,
+              name: 'Misah'
+            }
+            ]
         }
 
       ],
@@ -62,15 +82,14 @@ class PatientForm extends React.Component {
   }
 
   getCities(provinceId) {
-    const provinces = this.state.provinces.map();
-    provinces.map(
+    this.state.provinces.map(
         provinces => {
           if(provinces.id == provinceId){
             const cities = provinces.cities;
             console.log(cities);
             return (cities)
           }
-          return null;
+          //return null;
         }
     )
   }
@@ -86,11 +105,16 @@ class PatientForm extends React.Component {
             {
               this.state.provinces.map(
                   province =>
-                      <option value={province.id}>{province.name}</option>
+                      <option
+                          value={province.id}
+                          onClick={() =>
+                              this.getCities(province.id)}
+                      >{province.name}</option>
               )
             }
           </select>
         </ul>
+
     )
   }
 
