@@ -1,5 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
+import { Checkbox } from '@material-ui/core';
 
 class PatientForm extends React.Component {
   static propTypes = {
@@ -15,7 +16,6 @@ class PatientForm extends React.Component {
       symptoms: [],
       quarantinedStatus: [],
       notQuarantinedStatus: [],
-      //-------------PRIMERO------------------
       provinces: [
         {
           id: 1,
@@ -148,7 +148,8 @@ class PatientForm extends React.Component {
       cities :[],
       neighbourhoods: [],
       isProvinceSelected: false,
-      isCitySelected: false
+      isCitySelected: false,
+      isUserInCuarentine: false,
     }
   }
 
@@ -180,7 +181,6 @@ class PatientForm extends React.Component {
     )
 
   }
-
 
   renderProvinces() {
     return (
@@ -235,20 +235,55 @@ class PatientForm extends React.Component {
     )
   }
 
+  renderCuarentineStatus() {
+    return (
+        <div>
+          <p>Esta usted en Cuarentena?</p>
+          <Checkbox
+              value="checkedA"
+              inputProps={{ 'aria-label': 'Checkbox A' }
+             }
+              onClick={() =>
+              {
+                this.setState({
+                  isUserInCuarentine: !this.state.isUserInCuarentine
+                })
+              }}
+          />
+
+          <ul>
+            {this.state.isUserInCuarentine === true ? (
+                <ul>
+                  <p>Estado de Cuarentena: </p>
+
+                  {
+                    this.state.quarantinedStatus.map(status =>
+                        <li>{status}</li>
+                    )
+                  }
+                </ul>
+            ) : (
+                <ul>
+                  <p>Estado de No Cuarentena: </p>
+
+                  {
+                    this.state.notQuarantinedStatus.map(status =>
+                        //console.log(status)
+                        <li>{status}</li>
+                    )
+                  }
+                </ul>
+            )}
+          </ul>
+        </div>
+    )
+  }
+
   render () {
     return (
       <div>
         {this.renderProvinces()}
-        <ul>
-          <p>Estado de No Cuarentena: </p>
-
-          {
-            this.state.notQuarantinedStatus.map(status =>
-                //console.log(status)
-                <li>{status}</li>
-            )
-          }
-        </ul>
+        {this.renderCuarentineStatus()}
         <ul>
           <p>Sintomas: </p>
 
@@ -258,15 +293,7 @@ class PatientForm extends React.Component {
             )
           }
         </ul>
-        <ul>
-          <p>Estado de Cuarentena: </p>
 
-          {
-            this.state.quarantinedStatus.map(status =>
-              <li>{status}</li>
-            )
-          }
-        </ul>
       </div>
     );
   }
