@@ -14,13 +14,109 @@ class PatientForm extends React.Component {
     this.state = {
       symptoms: [],
       quarantinedStatus: [],
-      notQuarantinedStatus: []
+      notQuarantinedStatus: [],
+      //-------------PRIMERO------------------
+      provinces: [
+        {
+          id: 1,
+          name: 'Pichincha',
+          cities: [
+            {
+              id: 1,
+              name: 'Quito'
+            },
+            {
+              id: 2,
+              name: 'Machachi'
+            }
+          ]
+        },
+        {
+          id: 2,
+          name: 'Guayas',
+          cities: [
+            {
+              id: 1,
+              name: 'Guayaquil'
+            },
+            {
+              id: 2,
+              name: 'Salinas'
+            }
+          ]
+
+        },
+        {
+          id: 3,
+          name: 'Manabi'
+        },
+        {
+          id: 4,
+          name: 'Pastaza'
+        }
+
+      ],
+      cities: []
+
     }
   }
 
+  getCities(provinceId) {
+    const provinces = this.state.provinces.map();
+    provinces.map(
+        provinces => {
+          if(provinces.id == provinceId){
+            const cities = provinces.cities;
+            console.log(cities);
+            return (cities)
+          }
+          return null;
+        }
+    )
+  }
+  // CUARENTENN UN RADIO BUTTON
+    //POSITIVO - SALEN CASOS DE CUARENTENA
+    //NEGATIVO - SALEN COSAS DE CUARTENTE
+
+  renderProvinces() {
+    return (
+        <ul>
+          <p>Selecciona una provincia:</p>
+          <select name="province">
+            {
+              this.state.provinces.map(
+                  province =>
+                      <option value={province.id}>{province.name}</option>
+              )
+            }
+          </select>
+        </ul>
+    )
+  }
+
   render () {
+
     return (
       <div>
+        {this.renderProvinces()}
+        <ul>
+          <p>Selecciona una ciudad</p>
+          {
+            //const cities = getCities(1,this.state.provinces)
+              //console.log(cities)
+          }
+
+        </ul>
+        <ul>
+          <p>Estado de No Cuarentena: </p>
+
+          {
+            this.state.notQuarantinedStatus.map(status =>
+                //console.log(status)
+                <li>{status}</li>
+            )
+          }
+        </ul>
         <ul>
           <p>Sintomas: </p>
 
@@ -30,7 +126,6 @@ class PatientForm extends React.Component {
             )
           }
         </ul>
-
         <ul>
           <p>Estado de Cuarentena: </p>
 
@@ -41,15 +136,7 @@ class PatientForm extends React.Component {
           }
         </ul>
 
-        <ul>
-          <p>Estado de No Cuarentena: </p>
 
-          {
-            this.state.notQuarantinedStatus.map(status =>
-              <li>{status}</li>
-            )
-          }
-        </ul>
       </div>
     );
   }
@@ -77,6 +164,9 @@ class PatientForm extends React.Component {
       this.setState({notQuarantinedStatus})
     });
   }
+
 }
+
+
 
 export default PatientForm
