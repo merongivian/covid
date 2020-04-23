@@ -23,11 +23,31 @@ class PatientForm extends React.Component {
           cities: [
             {
               id: 1,
-              name: 'Quito'
+              name: 'Quito',
+              neighbourhoods: [
+                {
+                  id: 1,
+                  name: 'Chillogallo'
+                },
+                {
+                  id: 2,
+                  name: 'La tola'
+                }
+              ]
             },
             {
               id: 2,
-              name: 'Machachi'
+              name: 'Machachi',
+              neighbourhoods: [
+                {
+                  id: 1,
+                  name: 'Sunguyo'
+                },
+                {
+                  id: 2,
+                  name: 'La merced'
+                }
+              ]
             }
           ]
         },
@@ -37,11 +57,31 @@ class PatientForm extends React.Component {
           cities: [
             {
               id: 1,
-              name: 'Guayaquil'
+              name: 'Guayaquil',
+              neighbourhoods: [
+                {
+                  id: 1,
+                  name: 'Sauces'
+                },
+                {
+                  id: 2,
+                  name: 'La tejedora'
+                }
+              ]
             },
             {
               id: 2,
-              name: 'Salinas'
+              name: 'Salinas',
+              neighbourhoods: [
+                {
+                  id: 1,
+                  name: 'Loro'
+                },
+                {
+                  id: 2,
+                  name: 'La malta'
+                }
+              ]
             }
           ]
 
@@ -52,11 +92,31 @@ class PatientForm extends React.Component {
           cities: [
             {
               id: 1,
-              name: 'Chone'
+              name: 'Chone',
+              neighbourhoods: [
+                {
+                  id: 1,
+                  name: 'El guabal'
+                },
+                {
+                  id: 2,
+                  name: 'La reina'
+                }
+              ]
             },
             {
               id: 2,
-              name: 'Manta'
+              name: 'Manta',
+              neighbourhoods: [
+                {
+                  id: 1,
+                  name: 'palta'
+                },
+                {
+                  id: 2,
+                  name: 'La cd'
+                }
+              ]
             }
           ]
         },
@@ -66,7 +126,17 @@ class PatientForm extends React.Component {
           cities: [
             {
               id: 1,
-              name: 'Chillo'
+              name: 'Chillo',
+              neighbourhoods: [
+                {
+                  id: 1,
+                  name: 'merida'
+                },
+                {
+                  id: 2,
+                  name: 'La sasasas'
+                }
+              ]
             },
             {
               id: 2,
@@ -74,10 +144,11 @@ class PatientForm extends React.Component {
             }
             ]
         }
-
       ],
-      cities: []
-
+      cities :[],
+      neighbourhoods: [],
+      isProvinceSelected: false,
+      isCitySelected: false
     }
   }
 
@@ -86,51 +157,88 @@ class PatientForm extends React.Component {
         provinces => {
           if(provinces.id == provinceId){
             const cities = provinces.cities;
-            console.log(cities);
-            return (cities)
+            this.setState({
+              cities:cities,
+              isProvinceSelected: true
+            });
           }
-          //return null;
         }
     )
   }
-  // CUARENTENN UN RADIO BUTTON
-    //POSITIVO - SALEN CASOS DE CUARENTENA
-    //NEGATIVO - SALEN COSAS DE CUARTENTE
+
+  getNeighbourhoods(citieId){
+    this.state.cities.map(
+        cities => {
+          if(cities.id == citieId){
+            const neighbourhoods = cities.neighbourhoods;
+            this.setState({
+              neighbourhoods:neighbourhoods,
+              isCitySelected: true
+            });
+          }
+        }
+    )
+
+  }
+
 
   renderProvinces() {
     return (
+        <div>
         <ul>
           <p>Selecciona una provincia:</p>
-          <select name="province">
+          <select name="provinces">
             {
               this.state.provinces.map(
                   province =>
                       <option
                           value={province.id}
                           onClick={() =>
-                              this.getCities(province.id)}
+                          {
+                            this.getCities(province.id)
+                          }}
                       >{province.name}</option>
               )
             }
           </select>
         </ul>
+        <ul>
+          <p>Seleccione un ciudad:</p>
+          <select name="cities">
+            {
+              this.state.cities.map(
+                  citie =>
+                      <option
+                          value={citie.id}
+                          onClick={()=>
+                          {this.getNeighbourhoods(citie.id)}}
+                      >{citie.name}</option>
+              )
+            }
+          </select>
+        </ul>
+        <ul>
+          <p>Seleccione un barrio:</p>
+            <select name="neighbourhoods">
+              {
+                this.state.neighbourhoods.map(
+                    neighbourhood =>
+                        <option
+                            value={neighbourhood.id}
+                        >{neighbourhood.name}</option>
+                )
+              }
+            </select>
 
+          </ul>
+        </div>
     )
   }
 
   render () {
-
     return (
       <div>
         {this.renderProvinces()}
-        <ul>
-          <p>Selecciona una ciudad</p>
-          {
-            //const cities = getCities(1,this.state.provinces)
-              //console.log(cities)
-          }
-
-        </ul>
         <ul>
           <p>Estado de No Cuarentena: </p>
 
@@ -159,8 +267,6 @@ class PatientForm extends React.Component {
             )
           }
         </ul>
-
-
       </div>
     );
   }
