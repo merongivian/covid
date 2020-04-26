@@ -1,6 +1,9 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { Checkbox } from '@material-ui/core';
+import mapboxgl from 'mapbox-gl';
+
+mapboxgl.accessToken = 'pk.eyJ1IjoiY2VzYXJhbmFzY28iLCJhIjoiY2s5NTcweDF2MDE2bjNmcDd0aTM0Z2wxNSJ9.gA4RpRVwx7GIeOpg0EtTPQ';
 
 class PatientForm extends React.Component {
   static propTypes = {
@@ -279,9 +282,14 @@ class PatientForm extends React.Component {
     )
   }
 
+  renderMapbox() {
+    return <Mabbox />;
+  }
+
   render () {
     return (
       <div>
+
         {this.renderProvinces()}
         {this.renderCuarentineStatus()}
         <ul>
@@ -293,7 +301,7 @@ class PatientForm extends React.Component {
             )
           }
         </ul>
-
+        {this.renderMapbox()}
       </div>
     );
   }
@@ -324,6 +332,48 @@ class PatientForm extends React.Component {
 
 }
 
+
+class Mabbox extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      lng: 5,
+      lat: 34,
+      zoom: 2
+    };
+  }
+
+  componentDidMount() {
+    const map = new mapboxgl.Map({
+      container: this.mapContainer,
+      style: 'mapbox://styles/mapbox/streets-v11',
+      center: [this.state.lng, this.state.lat],
+      zoom: this.state.zoom
+    });
+
+    map.on('move', () => {
+      this.setState({
+        lng: map.getCenter().lng.toFixed(4),
+        lat: map.getCenter().lat.toFixed(4),
+        zoom: map.getZoom().toFixed(2)
+      });
+    });
+
+  }
+
+  render() {
+    return (
+        <div>
+          <div ref={el => this.mapContainer = el} className='mapContainer' >
+            <div className='sidebarStyle'>
+              <div>Longitude: {this.state.lng} | Latitude: {this.state.lat} | Zoom: {this.state.zoom}</div>
+            </div>
+          </div>
+        </div>
+    )
+  }
+}
 
 
 export default PatientForm
