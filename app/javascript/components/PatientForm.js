@@ -375,8 +375,8 @@ class Mabbox extends React.Component {
       container: this.mapContainer,
       style: 'mapbox://styles/mapbox/streets-v9',
       center: [this.state.lng, this.state.lat],
-      zoom: this.state.zoom
-      //minZoom:  this.state.minZoom,
+      zoom: this.state.zoom,
+      minZoom:  this.state.minZoom
     });
     map.on('move', () => {
       this.setState({
@@ -386,11 +386,7 @@ class Mabbox extends React.Component {
       });
 
     });
-    var overlay = document.getElementById('map-overlay');
-    var popup = new mapboxgl.Popup({
-      closeButton: false
-    });
-    map.on('load', function () {
+    map.on('load',  () => {
       map.addSource('states',{
         "type": "vector",
         "url": "mapbox://cesaranasco.2tiqxr7u"
@@ -415,15 +411,23 @@ class Mabbox extends React.Component {
           "fill-color": "#6e599f",
           "fill-opacity": 0.75
         },
-        "filter": ["in", "name_es", ""]
+        "filter": ["in", "name", ""]
       });
-      map.on('mousemove',function (e) {
+      map.on('mousemove', (e) => {
         var features = map.queryRenderedFeatures(e.point, {
           layers: ['states']
         });
-        console.log(features);
+        var feature = features[0];
+        //console.log(feature.properties.name);
+        map.setFilter('states-highlighted', ['in', 'name', feature.properties.name]);
+        map.on('click', ()=>{
+          this.setState({ //the error happens here
+            provinceName: feature.properties.name
+          });
+        });
+      });
 
-      })
+
     });
 
 
