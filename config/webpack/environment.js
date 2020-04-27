@@ -8,4 +8,8 @@ environment.plugins.prepend('Provide',
   })
 )
 
+// TODO: dont know what this do exactly, search for a better
+// solution to run mapbox, this looks dangerous
+environment.loaders.delete('nodeModules')
+
 module.exports = environment
