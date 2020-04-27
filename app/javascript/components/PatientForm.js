@@ -332,33 +332,100 @@ class PatientForm extends React.Component {
 
 }
 
-
 class Mabbox extends React.Component {
 
   constructor(props) {
     super(props);
     this.state = {
-      lng: 5,
-      lat: 34,
-      zoom: 2
-    };
+      lng: -83.5560,
+      lat: -1.9309,
+      zoom: 6,
+      minZoom: 6,
+      southWest: (-91.0270,-0.3814),
+      northEast: (-75.1247,-1.7402),
+      provinceName: '',
+      jsonUsuarios: [
+        {
+          id:101,
+          age: 12,
+          sex: "Male",
+          zip_code: "170403",
+          tested: true,
+          contact_with_sick_person: true,
+          symptoms: ["Fever","Cough"],
+          with_severe_illness: true,
+          quarantined: true,
+          quarantined_status: "living",
+          smoking_habits: "2 cigarettes a week",
+          temperature: "38",
+          privacy_agreement: true,
+          coordinates: "-77.7442,-1.3251",
+          province_id: 3760,
+          city_id: 1,
+          neighbourhood_id: 1
+        }
+      ]
+
+  };
   }
 
   componentDidMount() {
+
     const map = new mapboxgl.Map({
       container: this.mapContainer,
-      style: 'mapbox://styles/mapbox/streets-v11',
+      style: 'mapbox://styles/mapbox/streets-v9',
       center: [this.state.lng, this.state.lat],
       zoom: this.state.zoom
+      //minZoom:  this.state.minZoom,
     });
-
     map.on('move', () => {
       this.setState({
         lng: map.getCenter().lng.toFixed(4),
         lat: map.getCenter().lat.toFixed(4),
-        zoom: map.getZoom().toFixed(2)
+        zoom: map.getZoom().toFixed(2),
       });
+
     });
+    var overlay = document.getElementById('map-overlay');
+    var popup = new mapboxgl.Popup({
+      closeButton: false
+    });
+    map.on('load', function () {
+      map.addSource('states',{
+        "type": "vector",
+        "url": "mapbox://cesaranasco.2tiqxr7u"
+      });
+      map.addLayer({
+        "id": "states",
+        "type": "fill",
+        "source": "states",
+        "source-layer": "ne_10m_admin_1_states_provinc-09lyao",
+        "paint": {
+          "fill-outline-color": "rgba(0,0,0,0.1)",
+          "fill-color": "rgba(0,0,0,0.1)"
+        }
+      });
+      map.addLayer({
+        "id": "states-highlighted",
+        "type": "fill",
+        "source": "states",
+        "source-layer": "ne_10m_admin_1_states_provinc-09lyao",
+        "paint": {
+          "fill-outline-color": "#484896",
+          "fill-color": "#6e599f",
+          "fill-opacity": 0.75
+        },
+        "filter": ["in", "name_es", ""]
+      });
+      map.on('mousemove',function (e) {
+        var features = map.queryRenderedFeatures(e.point, {
+          layers: ['states']
+        });
+        console.log(features);
+
+      })
+    });
+
 
   }
 
@@ -369,11 +436,13 @@ class Mabbox extends React.Component {
             <div className='sidebarStyle'>
               <div>Longitude: {this.state.lng} | Latitude: {this.state.lat} | Zoom: {this.state.zoom}</div>
             </div>
+            <div className='mapOverlay'>
+              <div>Province Name: {this.state.provinceName}</div>
+            </div>
           </div>
         </div>
     )
   }
 }
-
 
 export default PatientForm
