@@ -344,13 +344,18 @@ class Mabbox extends React.Component {
       southWest: (-91.0270,-0.3814),
       northEast: (-75.1247,-1.7402),
       provinceName: '',
-      jsonUsuarios: [
+      provinceId: 0,
+      numberOfUsers: 0,
+      numberOfTestedUsers: 0,
+      numberOfConfirmedUsers: 0,
+      usersJson: [
         {
           id:101,
           age: 12,
           sex: "Male",
           zip_code: "170403",
           tested: true,
+          testResult: true,
           contact_with_sick_person: true,
           symptoms: ["Fever","Cough"],
           with_severe_illness: true,
@@ -360,7 +365,47 @@ class Mabbox extends React.Component {
           temperature: "38",
           privacy_agreement: true,
           coordinates: "-77.7442,-1.3251",
-          province_id: 3760,
+          province_id: 772,
+          city_id: 1,
+          neighbourhood_id: 1
+        },
+        {
+          id:102,
+          age: 12,
+          sex: "Male",
+          zip_code: "170403",
+          tested: true,
+          testResult: true,
+          contact_with_sick_person: true,
+          symptoms: ["Fever","Cough"],
+          with_severe_illness: true,
+          quarantined: true,
+          quarantined_status: "living",
+          smoking_habits: "2 cigarettes a week",
+          temperature: "38",
+          privacy_agreement: true,
+          coordinates: "-77.7442,-1.3251",
+          province_id: 774,
+          city_id: 1,
+          neighbourhood_id: 1
+        },
+        {
+          id:103,
+          age: 12,
+          sex: "Male",
+          zip_code: "170403",
+          tested: true,
+          testResult: false,
+          contact_with_sick_person: true,
+          symptoms: ["Fever","Cough"],
+          with_severe_illness: true,
+          quarantined: true,
+          quarantined_status: "living",
+          smoking_habits: "2 cigarettes a week",
+          temperature: "38",
+          privacy_agreement: true,
+          coordinates: "-77.7442,-1.3251",
+          province_id: 774,
           city_id: 1,
           neighbourhood_id: 1
         }
@@ -370,10 +415,9 @@ class Mabbox extends React.Component {
   }
 
   componentDidMount() {
-
     const map = new mapboxgl.Map({
       container: this.mapContainer,
-      style: 'mapbox://styles/mapbox/streets-v9',
+      style: 'mapbox://styles/cesaranasco/ck9eyep6w1cp51imwjhchmy0s',
       center: [this.state.lng, this.state.lat],
       zoom: this.state.zoom,
       minZoom:  this.state.minZoom
@@ -421,17 +465,23 @@ class Mabbox extends React.Component {
         //console.log(feature.properties.name);
         map.setFilter('states-highlighted', ['in', 'name', feature.properties.name]);
         map.on('click', ()=>{
-          this.setState({ //the error happens here
-            provinceName: feature.properties.name
+          //console.log(feature);
+          this.setState({
+            provinceName: feature.properties.name,
+            provinceId: feature.id,
           });
+          console.log('click');
         });
       });
-
-
     });
+  }
 
+  getStatistics() {
+
+   console.log(this.state.usersJson)
 
   }
+
 
   render() {
     return (
@@ -441,7 +491,14 @@ class Mabbox extends React.Component {
               <div>Longitude: {this.state.lng} | Latitude: {this.state.lat} | Zoom: {this.state.zoom}</div>
             </div>
             <div className='mapOverlay'>
-              <div>Province Name: {this.state.provinceName}</div>
+              <div>
+                <li>
+                  <ul>Province Name: {this.state.provinceName}</ul>
+                  <ul>Number of Users: {this.state.numberOfUsers}</ul>
+                  <ul>Number of Tested Users: {this.state.numberOfTestedUsers}</ul>
+                  <ul>Number of Confirmed Users: {this.state.numberOfConfirmedUsers}</ul>
+                </li>
+              </div>
             </div>
           </div>
         </div>
