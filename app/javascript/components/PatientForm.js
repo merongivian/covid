@@ -408,6 +408,46 @@ class Mabbox extends React.Component {
           province_id: 774,
           city_id: 1,
           neighbourhood_id: 1
+        },
+        {
+          id:104,
+          age: 12,
+          sex: "Male",
+          zip_code: "170403",
+          tested: true,
+          testResult: true,
+          contact_with_sick_person: true,
+          symptoms: ["Fever","Cough"],
+          with_severe_illness: true,
+          quarantined: true,
+          quarantined_status: "living",
+          smoking_habits: "2 cigarettes a week",
+          temperature: "38",
+          privacy_agreement: true,
+          coordinates: "-77.7442,-1.3251",
+          province_id: 774,
+          city_id: 1,
+          neighbourhood_id: 1
+        },
+        {
+          id:105,
+          age: 12,
+          sex: "Male",
+          zip_code: "170403",
+          tested: true,
+          testResult: false,
+          contact_with_sick_person: true,
+          symptoms: ["Fever","Cough"],
+          with_severe_illness: true,
+          quarantined: true,
+          quarantined_status: "living",
+          smoking_habits: "2 cigarettes a week",
+          temperature: "38",
+          privacy_agreement: true,
+          coordinates: "-77.7442,-1.3251",
+          province_id: 775,
+          city_id: 1,
+          neighbourhood_id: 1
         }
       ]
 
@@ -464,21 +504,31 @@ class Mabbox extends React.Component {
         var feature = features[0];
         //console.log(feature.properties.name);
         map.setFilter('states-highlighted', ['in', 'name', feature.properties.name]);
-        map.on('click', ()=>{
-          //console.log(feature);
-          this.setState({
-            provinceName: feature.properties.name,
-            provinceId: feature.id,
-          });
-          console.log('click');
+      });
+      map.on('click', (e)=>{
+        var features = map.queryRenderedFeatures(e.point, {
+          layers: ['states']
         });
+        var feature = features[0];
+        this.setState({
+          provinceName: feature.properties.name,
+          provinceId: feature.id,
+        });
+        this.getProvinceStatistics();
       });
     });
   }
 
-  getStatistics() {
+  getProvinceStatistics() {
+    const usersInProvince = this.state.usersJson.filter( user => {
+      return user.province_id == this.state.provinceId
+    })
 
-   console.log(this.state.usersJson)
+    this.setState({
+      numberOfUsers: usersInProvince.length,
+      numberOfTestedUsers: usersInProvince.filter(user => {return user.tested == true}).length,
+        numberOfConfirmedUsers: usersInProvince.filter(user => {return user.testResult == true}).length
+    })
 
   }
 
