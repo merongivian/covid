@@ -189,8 +189,8 @@ class PatientForm extends React.Component {
     return (
         <div>
         <ul>
-          <p>Selecciona una provincia:</p>
-          <select name="provinces">
+          <label class="formLabel" htmlFor="formControlProvinces">Select a province:</label>
+          <select name="provinces" className="form-control" id="formControlProvinces">
             {
               this.state.provinces.map(
                   province =>
@@ -206,8 +206,9 @@ class PatientForm extends React.Component {
           </select>
         </ul>
         <ul>
-          <p>Seleccione un ciudad:</p>
-          <select name="cities">
+          <label class="formLabel" htmlFor="formControlCities">Select a city:</label>
+          <select name="cities" className="form-control" id="formControlCities">
+
             {
               this.state.cities.map(
                   citie =>
@@ -221,8 +222,8 @@ class PatientForm extends React.Component {
           </select>
         </ul>
         <ul>
-          <p>Seleccione un barrio:</p>
-            <select name="neighbourhoods">
+          <label class="formLabel" htmlFor="formControlNeighbourhoods">Seleccione un barrio:</label>
+            <select name="neighbourhoods" className="form-control" id="formControlNeighbourhoods">
               {
                 this.state.neighbourhoods.map(
                     neighbourhood =>
@@ -241,7 +242,7 @@ class PatientForm extends React.Component {
   renderCuarentineStatus() {
     return (
         <div>
-          <p>Esta usted en Cuarentena?</p>
+        <ul>
           <Checkbox
               value="checkedA"
               inputProps={{ 'aria-label': 'Checkbox A' }
@@ -253,31 +254,39 @@ class PatientForm extends React.Component {
                 })
               }}
           />
+          <label class="formLabel" htmlFor="">Are you currently in quarentine?</label>
 
-          <ul>
+
             {this.state.isUserInCuarentine === true ? (
                 <ul>
-                  <p>Estado de Cuarentena: </p>
 
+                  <p>Select your quarentine status: </p>
                   {
                     this.state.quarantinedStatus.map(status =>
-                        <li>{status}</li>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio"/>
+                          <label class="form-check-label" > {status}</label>
+                        </div>
                     )
                   }
                 </ul>
+
             ) : (
                 <ul>
-                  <p>Estado de No Cuarentena: </p>
+                  <p>Select your status: </p>
 
                   {
                     this.state.notQuarantinedStatus.map(status =>
-                        //console.log(status)
-                        <li>{status}</li>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio"/>
+                          <label class="form-check-label" > {status}</label>
+                        </div>
                     )
                   }
                 </ul>
             )}
-          </ul>
+
+        </ul>
         </div>
     )
   }
@@ -289,18 +298,82 @@ class PatientForm extends React.Component {
   render () {
     return (
       <div>
+        <form>
+          <div className="form-group">
+            <ul>
+              <label htmlFor="formAge" class="formLabel">Your age</label>
+              <input type="number" className="form-control" id="formAge" placeholder="..."/>
+            </ul>
+            <ul>
+              <label className="formLabel" htmlFor="">Gender</label>
+              <div className="form-check">
+                <input className="form-check-input" type="radio"/>
+                <label className="form-check-label"> Male</label>
+              </div>
+              <div className="form-check">
+                <input className="form-check-input" type="radio"/>
+                <label className="form-check-label"> Female</label>
+              </div>
+              <div className="form-check">
+                <input className="form-check-input" type="radio"/>
+                <label className="form-check-label"> Other</label>
+              </div>
 
-        {this.renderProvinces()}
-        {this.renderCuarentineStatus()}
-        <ul>
-          <p>Sintomas: </p>
+            </ul>
+            <ul>
+              <label className="formLabel" htmlFor="">Postal Code / Zip Code</label>
+              <input type="text" className="form-control" id="formPostalCode" placeholder="..."/>
+            </ul>
+            {this.renderProvinces()}
+            {this.renderCuarentineStatus()}
+            <ul>
+              <Checkbox/>
+              <label className="formLabel" htmlFor="">Have you been tested?</label>
 
-          {
-            this.state.symptoms.map(symptom =>
-              <li>{symptom}</li>
-            )
-          }
-        </ul>
+            </ul>
+            <ul>
+              <Checkbox/>
+              <label className="formLabel" htmlFor="">Have you been in contact with a person who tested positive?</label>
+
+            </ul>
+            <ul>
+              <Checkbox/>
+              <label className="formLabel" htmlFor="">Do you have any severe illnes?</label>
+
+            </ul>
+            <ul>
+              <label class="formLabel" htmlFor="">Symptoms you have experienced</label>
+              <p>Select only the symptoms you have experienced</p>
+              <ul>
+                {
+                    this.state.symptoms.map(symptom =>
+                        <div class="form-check">
+                          <input type="checkbox" className="form-check-input" />
+                          <label className="form-check-label"> {symptom}</label>
+                        </div>
+                    )
+                }
+              </ul>
+            </ul>
+            <ul>
+              <label className="formLabel" htmlFor="">Do you have any smoking habits?</label>
+              <input type="text" className="form-control" id="formSmokingHabits" placeholder="..."/>
+            </ul>
+            <ul>
+              <label className="formLabel" htmlFor="">Temperature</label>
+              <input type="number" className="form-control" id="formTemperature" placeholder="..."/>
+            </ul>
+            <ul>
+              <Checkbox/>
+              <label className="formLabel" htmlFor="">Privacy Agreement</label>
+
+            </ul>
+            <ul>
+              <button type="submit" className="btn btn-primary">Submit</button>
+            </ul>
+          </div>
+          
+        </form>
         {this.renderMapbox()}
       </div>
     );
@@ -451,7 +524,7 @@ class Mabbox extends React.Component {
         }
       ]
 
-  };
+    };
   }
 
   componentDidMount() {
@@ -527,27 +600,33 @@ class Mabbox extends React.Component {
     this.setState({
       numberOfUsers: usersInProvince.length,
       numberOfTestedUsers: usersInProvince.filter(user => {return user.tested == true}).length,
-        numberOfConfirmedUsers: usersInProvince.filter(user => {return user.testResult == true}).length
+      numberOfConfirmedUsers: usersInProvince.filter(user => {return user.testResult == true}).length
     })
 
   }
 
-
   render() {
     return (
         <div>
-          <div ref={el => this.mapContainer = el} className='mapContainer' >
-            <div className='sidebarStyle'>
-              <div>Longitude: {this.state.lng} | Latitude: {this.state.lat} | Zoom: {this.state.zoom}</div>
+          <div class='row'>
+            <div class='column'>
+              <div ref={el => this.mapContainer = el} className='mapContainer' >
+                <div className='sidebarStyle'>
+                  <div>Longitude: {this.state.lng} | Latitude: {this.state.lat} | Zoom: {this.state.zoom}</div>
+                </div>
+
+              </div>
             </div>
-            <div className='mapOverlay'>
-              <div>
-                <li>
-                  <ul>Province Name: {this.state.provinceName}</ul>
-                  <ul>Number of Users: {this.state.numberOfUsers}</ul>
-                  <ul>Number of Tested Users: {this.state.numberOfTestedUsers}</ul>
-                  <ul>Number of Confirmed Users: {this.state.numberOfConfirmedUsers}</ul>
-                </li>
+            <div class='column'>
+              <div className='mapOverlay'>
+                <div>
+                  <li>
+                    <ul>Province Name: {this.state.provinceName}</ul>
+                    <ul>Number of Users: {this.state.numberOfUsers}</ul>
+                    <ul>Number of Tested Users: {this.state.numberOfTestedUsers}</ul>
+                    <ul>Number of Confirmed Users: {this.state.numberOfConfirmedUsers}</ul>
+                  </li>
+                </div>
               </div>
             </div>
           </div>

@@ -16,10 +16,10 @@
 
 .mapContainer {
     width: 80%;
-    height: 80%;
-    top: 100px;
+    height: 50%;
+    top: 56px;
     bottom: 100px;
-    position: absolute;
+    position: center;
 }
 
 .sidebarStyle {
@@ -38,13 +38,17 @@
 .mapOverlay {
     display: inline-block;
     position: absolute;
-    top: 0;
+    top: 56px;
     right: 0;
     margin: 12px;
     background-color: #404040;
     color: #ffffff;
     z-index: 1 !important;
     padding: 6px;
+    font-weight: bold;
+}
+
+.formLabel {
     font-weight: bold;
 }
 
