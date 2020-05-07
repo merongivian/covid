@@ -1,6 +1,8 @@
 import React from "react";
 import mapboxgl from "mapbox-gl";
 
+mapboxgl.accessToken = 'pk.eyJ1IjoiY2VzYXJhbmFzY28iLCJhIjoiY2s5NTcweDF2MDE2bjNmcDd0aTM0Z2wxNSJ9.gA4RpRVwx7GIeOpg0EtTPQ';
+
 class Mabbox extends React.Component {
 
     constructor(props) {
@@ -230,3 +232,5 @@ class Mabbox extends React.Component {
         )
     }
 }
+
+ReactDOM.render(Mabbox, document.getElementById('Mapbox'));

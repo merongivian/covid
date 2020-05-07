@@ -21844,3 +21844,2919 @@ Completed 200 OK in 81ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 1729
 Completed 200 OK in 277ms (Views: 16.1ms | ActiveRecord: 0.0ms | Allocations: 2677)
 
 
+Started GET "/" for ::1 at 2020-05-06 01:35:25 -0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 3.1ms | Allocations: 173)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/cesaranasco/Documents/GitHub/covid/public/packs
+Completed 200 OK in 39786ms (Views: 39764.5ms | ActiveRecord: 0.0ms | Allocations: 9765)
+
+
+Started GET "/site.css" for ::1 at 2020-05-06 01:36:11 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/site.css"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-05-06 01:37:08 -0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 14.7ms | Allocations: 163)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/cesaranasco/Documents/GitHub/covid/public/packs
+Completed 200 OK in 67180ms (Views: 67155.2ms | ActiveRecord: 0.0ms | Allocations: 9925)
+
+
+Started GET "/site.css" for ::1 at 2020-05-06 01:38:16 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/site.css"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/user/symptoms" for ::1 at 2020-05-06 01:38:28 -0500
+Started GET "/api/user/quarantined_status" for ::1 at 2020-05-06 01:38:28 -0500
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-05-06 01:38:28 -0500
+Processing by Api::UsersController#quarantined_status as */*
+Processing by Api::UsersController#symptoms as */*
+Processing by Api::UsersController#not_quarantined_status as */*
+Completed 200 OK in 49ms (Views: 2.1ms | ActiveRecord: 0.0ms | Allocations: 2039)
+
+
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 395)
+
+
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 324)
+
+
+Started GET "/" for ::1 at 2020-05-06 01:39:19 -0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 2.2ms | Allocations: 173)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/cesaranasco/Documents/GitHub/covid/public/packs
+Completed 200 OK in 38375ms (Views: 38369.2ms | ActiveRecord: 0.0ms | Allocations: 9772)
+
+
+Started GET "/site.css" for ::1 at 2020-05-06 01:39:58 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/site.css"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-05-06 01:40:02 -0500
+Started GET "/api/user/symptoms" for ::1 at 2020-05-06 01:40:02 -0500
+Started GET "/api/user/quarantined_status" for ::1 at 2020-05-06 01:40:02 -0500
+Processing by Api::UsersController#symptoms as */*
+Processing by Api::UsersController#quarantined_status as */*
+Processing by Api::UsersController#not_quarantined_status as */*
+Completed 200 OK in 107ms (Views: 2.1ms | ActiveRecord: 0.0ms | Allocations: 1960)
+
+
+Completed 200 OK in 135ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 2758)
+
+
+Completed 200 OK in 96ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 2647)
+
+
+Started GET "/" for ::1 at 2020-05-06 01:42:55 -0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 8.3ms | Allocations: 173)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/cesaranasco/Documents/GitHub/covid/public/packs
+Completed 200 OK in 22503ms (Views: 22490.3ms | ActiveRecord: 0.0ms | Allocations: 9713)
+
+
+Started GET "/site.css" for ::1 at 2020-05-06 01:43:20 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/site.css"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/user/symptoms" for ::1 at 2020-05-06 01:43:31 -0500
+Started GET "/api/user/quarantined_status" for ::1 at 2020-05-06 01:43:31 -0500
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-05-06 01:43:31 -0500
+Processing by Api::UsersController#symptoms as */*
+Processing by Api::UsersController#not_quarantined_status as */*
+Processing by Api::UsersController#quarantined_status as */*
+Completed 200 OK in 191ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 1890)
+
+
+Completed 200 OK in 102ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 782)
+
+
+Completed 200 OK in 106ms (Views: 3.1ms | ActiveRecord: 0.0ms | Allocations: 2001)
+
+
+Started GET "/" for ::1 at 2020-05-06 01:45:24 -0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 3.3ms | Allocations: 270)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/cesaranasco/Documents/GitHub/covid/public/packs
+Completed 200 OK in 21280ms (Views: 21270.4ms | ActiveRecord: 0.0ms | Allocations: 10661)
+
+
+Started GET "/site.css" for ::1 at 2020-05-06 01:45:48 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/site.css"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/user/symptoms" for ::1 at 2020-05-06 01:45:55 -0500
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-05-06 01:45:55 -0500
+Started GET "/api/user/quarantined_status" for ::1 at 2020-05-06 01:45:55 -0500
+Processing by Api::UsersController#symptoms as */*
+Processing by Api::UsersController#quarantined_status as */*
+Processing by Api::UsersController#not_quarantined_status as */*
+Completed 200 OK in 43ms (Views: 9.7ms | ActiveRecord: 0.0ms | Allocations: 2224)
+
+
+Completed 200 OK in 38ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 2054)
+
+
+Completed 200 OK in 35ms (Views: 2.7ms | ActiveRecord: 0.0ms | Allocations: 1959)
+
+
+Started GET "/" for ::1 at 2020-05-06 01:46:30 -0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 9.3ms | Allocations: 266)
+Completed 200 OK in 293ms (Views: 269.6ms | ActiveRecord: 0.0ms | Allocations: 9223)
+
+
+Started GET "/site.css" for ::1 at 2020-05-06 01:46:31 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/site.css"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/user/symptoms" for ::1 at 2020-05-06 01:46:33 -0500
+Processing by Api::UsersController#symptoms as */*
+Completed 200 OK in 9ms (Views: 1.1ms | ActiveRecord: 0.0ms | Allocations: 392)
+
+
+Started GET "/api/user/quarantined_status" for ::1 at 2020-05-06 01:46:33 -0500
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-05-06 01:46:33 -0500
+Processing by Api::UsersController#quarantined_status as */*
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 331)
+
+
+Processing by Api::UsersController#not_quarantined_status as */*
+Completed 200 OK in 6ms (Views: 2.3ms | ActiveRecord: 0.0ms | Allocations: 321)
+
+
+Started GET "/" for ::1 at 2020-05-06 01:47:38 -0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 6.8ms | Allocations: 266)
+Completed 200 OK in 137ms (Views: 125.4ms | ActiveRecord: 0.0ms | Allocations: 9231)
+
+
+Started GET "/site.css" for ::1 at 2020-05-06 01:47:38 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/site.css"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/user/symptoms" for ::1 at 2020-05-06 01:47:40 -0500
+Processing by Api::UsersController#symptoms as */*
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 440)
+
+
+Started GET "/api/user/quarantined_status" for ::1 at 2020-05-06 01:47:40 -0500
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-05-06 01:47:40 -0500
+Processing by Api::UsersController#not_quarantined_status as */*
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 327)
+
+
+Processing by Api::UsersController#quarantined_status as */*
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 337)
+
+
+Started GET "/" for ::1 at 2020-05-06 01:47:43 -0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 0.7ms | Allocations: 169)
+Completed 200 OK in 120ms (Views: 116.3ms | ActiveRecord: 0.0ms | Allocations: 8134)
+
+
+Started GET "/site.css" for ::1 at 2020-05-06 01:47:44 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/site.css"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/user/symptoms" for ::1 at 2020-05-06 01:47:45 -0500
+Processing by Api::UsersController#symptoms as */*
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.0ms | Allocations: 394)
+
+
+Started GET "/api/user/quarantined_status" for ::1 at 2020-05-06 01:47:45 -0500
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-05-06 01:47:45 -0500
+Processing by Api::UsersController#not_quarantined_status as */*
+Processing by Api::UsersController#quarantined_status as */*
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 323)
+
+
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 333)
+
+
+Started GET "/" for ::1 at 2020-05-06 01:48:55 -0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 13.0ms | Allocations: 163)
+Completed 200 OK in 269ms (Views: 247.3ms | ActiveRecord: 0.0ms | Allocations: 8123)
+
+
+Started GET "/site.css" for ::1 at 2020-05-06 01:48:55 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/site.css"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/user/quarantined_status" for ::1 at 2020-05-06 01:48:58 -0500
+Started GET "/api/user/symptoms" for ::1 at 2020-05-06 01:48:58 -0500
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-05-06 01:48:58 -0500
+Processing by Api::UsersController#not_quarantined_status as */*
+Completed 200 OK in 20ms (Views: 3.0ms | ActiveRecord: 0.0ms | Allocations: 323)
+
+
+Processing by Api::UsersController#symptoms as */*
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.0ms | Allocations: 394)
+
+
+Processing by Api::UsersController#quarantined_status as */*
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 333)
+
+
+Started GET "/" for ::1 at 2020-05-06 01:50:28 -0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 4.5ms | Allocations: 163)
+Completed 200 OK in 185ms (Views: 167.9ms | ActiveRecord: 0.0ms | Allocations: 8124)
+
+
+Started GET "/site.css" for ::1 at 2020-05-06 01:50:29 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/site.css"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/user/symptoms" for ::1 at 2020-05-06 01:50:30 -0500
+Processing by Api::UsersController#symptoms as */*
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 395)
+
+
+Started GET "/api/user/quarantined_status" for ::1 at 2020-05-06 01:50:30 -0500
+Processing by Api::UsersController#quarantined_status as */*
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 334)
+
+
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-05-06 01:50:30 -0500
+Processing by Api::UsersController#not_quarantined_status as */*
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 335)
+
+
+Started GET "/" for ::1 at 2020-05-06 01:50:59 -0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 1.5ms | Allocations: 173)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/cesaranasco/Documents/GitHub/covid/public/packs
+Completed 200 OK in 40534ms (Views: 40527.8ms | ActiveRecord: 0.0ms | Allocations: 9838)
+
+
+Started GET "/site.css" for ::1 at 2020-05-06 01:51:42 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/site.css"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/user/quarantined_status" for ::1 at 2020-05-06 01:51:46 -0500
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-05-06 01:51:46 -0500
+Started GET "/api/user/symptoms" for ::1 at 2020-05-06 01:51:46 -0500
+Processing by Api::UsersController#quarantined_status as */*
+Processing by Api::UsersController#symptoms as */*
+Processing by Api::UsersController#not_quarantined_status as */*
+Completed 200 OK in 143ms (Views: 1.8ms | ActiveRecord: 0.0ms | Allocations: 2120)
+
+
+Completed 200 OK in 144ms (Views: 1.7ms | ActiveRecord: 0.0ms | Allocations: 2329)
+
+
+Completed 200 OK in 114ms (Views: 5.8ms | ActiveRecord: 0.0ms | Allocations: 2465)
+
+
+Started GET "/" for ::1 at 2020-05-06 01:52:02 -0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 19.9ms | Allocations: 163)
+Completed 200 OK in 631ms (Views: 584.4ms | ActiveRecord: 0.0ms | Allocations: 9173)
+
+
+Started GET "/site.css" for ::1 at 2020-05-06 01:52:03 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/site.css"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/user/quarantined_status" for ::1 at 2020-05-06 01:52:08 -0500
+Started GET "/api/user/symptoms" for ::1 at 2020-05-06 01:52:08 -0500
+Processing by Api::UsersController#symptoms as */*
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-05-06 01:52:08 -0500
+Completed 200 OK in 69ms (Views: 44.2ms | ActiveRecord: 0.0ms | Allocations: 400)
+
+
+Processing by Api::UsersController#not_quarantined_status as */*
+Processing by Api::UsersController#quarantined_status as */*
+Completed 200 OK in 9ms (Views: 0.9ms | ActiveRecord: 0.0ms | Allocations: 619)
+
+
+Completed 200 OK in 8ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 339)
+
+
+Started GET "/" for ::1 at 2020-05-06 01:52:58 -0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 5.4ms | Allocations: 270)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/cesaranasco/Documents/GitHub/covid/public/packs
+Completed 200 OK in 24609ms (Views: 24599.6ms | ActiveRecord: 0.0ms | Allocations: 10663)
+
+
+Started GET "/site.css" for ::1 at 2020-05-06 01:53:25 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/site.css"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/user/symptoms" for ::1 at 2020-05-06 01:53:28 -0500
+Started GET "/api/user/quarantined_status" for ::1 at 2020-05-06 01:53:28 -0500
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-05-06 01:53:28 -0500
+Processing by Api::UsersController#quarantined_status as */*
+Processing by Api::UsersController#not_quarantined_status as */*
+Processing by Api::UsersController#symptoms as */*
+Completed 200 OK in 23ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 2123)
+
+
+Completed 200 OK in 21ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 1939)
+
+
+Completed 200 OK in 21ms (Views: 1.2ms | ActiveRecord: 0.0ms | Allocations: 1902)
+
+
+Started GET "/" for ::1 at 2020-05-06 01:56:15 -0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 28.2ms | Allocations: 266)
+Completed 200 OK in 473ms (Views: 435.1ms | ActiveRecord: 0.0ms | Allocations: 9236)
+
+
+Started GET "/site.css" for ::1 at 2020-05-06 01:56:16 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/site.css"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/user/symptoms" for ::1 at 2020-05-06 01:56:21 -0500
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-05-06 01:56:21 -0500
+Started GET "/api/user/quarantined_status" for ::1 at 2020-05-06 01:56:21 -0500
+Processing by Api::UsersController#quarantined_status as */*
+Completed 200 OK in 16ms (Views: 4.1ms | ActiveRecord: 0.0ms | Allocations: 339)
+
+
+Processing by Api::UsersController#symptoms as */*
+Completed 200 OK in 4ms (Views: 1.2ms | ActiveRecord: 0.0ms | Allocations: 400)
+
+
+Processing by Api::UsersController#not_quarantined_status as */*
+Completed 200 OK in 3ms (Views: 1.2ms | ActiveRecord: 0.0ms | Allocations: 329)
+
+
+Started GET "/" for ::1 at 2020-05-06 01:57:05 -0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 5.5ms | Allocations: 169)
+Completed 200 OK in 189ms (Views: 165.4ms | ActiveRecord: 0.0ms | Allocations: 8127)
+
+
+Started GET "/site.css" for ::1 at 2020-05-06 01:57:06 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/site.css"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/user/symptoms" for ::1 at 2020-05-06 01:57:09 -0500
+Started GET "/api/user/quarantined_status" for ::1 at 2020-05-06 01:57:09 -0500
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-05-06 01:57:09 -0500
+Processing by Api::UsersController#symptoms as */*
+Completed 200 OK in 31ms (Views: 3.5ms | ActiveRecord: 0.0ms | Allocations: 401)
+
+
+Processing by Api::UsersController#not_quarantined_status as */*
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 330)
+
+
+Processing by Api::UsersController#quarantined_status as */*
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 340)
+
+
+Started GET "/" for ::1 at 2020-05-06 01:57:14 -0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 12.6ms | Allocations: 267)
+Completed 200 OK in 414ms (Views: 360.1ms | ActiveRecord: 0.0ms | Allocations: 9221)
+
+
+Started GET "/site.css" for ::1 at 2020-05-06 01:57:15 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/site.css"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/user/symptoms" for ::1 at 2020-05-06 01:57:18 -0500
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-05-06 01:57:18 -0500
+Started GET "/api/user/quarantined_status" for ::1 at 2020-05-06 01:57:18 -0500
+Processing by Api::UsersController#not_quarantined_status as */*
+Completed 200 OK in 8ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 323)
+
+
+Processing by Api::UsersController#quarantined_status as */*
+Completed 200 OK in 6ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 332)
+
+
+Processing by Api::UsersController#symptoms as */*
+Completed 200 OK in 6ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 393)
+
+
+Started GET "/" for ::1 at 2020-05-06 01:57:56 -0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 17.5ms | Allocations: 271)
+[Webpacker] Compiling…
+Started GET "/" for ::1 at 2020-05-06 01:58:29 -0500
+[Webpacker] Compiled all packs in /Users/cesaranasco/Documents/GitHub/covid/public/packs
+Completed 200 OK in 40224ms (Views: 40170.3ms | ActiveRecord: 0.0ms | Allocations: 11683)
+
+
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 4.5ms | Allocations: 173)
+Completed 200 OK in 100ms (Views: 98.1ms | ActiveRecord: 0.0ms | Allocations: 8271)
+
+
+Started GET "/site.css" for ::1 at 2020-05-06 01:58:43 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/site.css"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/user/quarantined_status" for ::1 at 2020-05-06 01:58:59 -0500
+Started GET "/api/user/symptoms" for ::1 at 2020-05-06 01:58:59 -0500
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-05-06 01:58:59 -0500
+Processing by Api::UsersController#symptoms as */*
+Processing by Api::UsersController#not_quarantined_status as */*
+Completed 200 OK in 118ms (Views: 8.4ms | ActiveRecord: 0.0ms | Allocations: 1954)
+
+
+Completed 200 OK in 140ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 1957)
+
+
+Processing by Api::UsersController#quarantined_status as */*
+Completed 200 OK in 23ms (Views: 3.8ms | ActiveRecord: 0.0ms | Allocations: 336)
+
+
+Started GET "/" for ::1 at 2020-05-06 01:59:36 -0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 28.9ms | Allocations: 271)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/cesaranasco/Documents/GitHub/covid/public/packs
+Completed 200 OK in 24858ms (Views: 24830.3ms | ActiveRecord: 0.0ms | Allocations: 10676)
+
+
+Started GET "/site.css" for ::1 at 2020-05-06 02:00:03 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/site.css"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/user/quarantined_status" for ::1 at 2020-05-06 02:00:10 -0500
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-05-06 02:00:10 -0500
+Started GET "/api/user/symptoms" for ::1 at 2020-05-06 02:00:10 -0500
+Processing by Api::UsersController#not_quarantined_status as */*
+Processing by Api::UsersController#quarantined_status as */*
+Processing by Api::UsersController#symptoms as */*
+Completed 200 OK in 91ms (Views: 1.6ms | ActiveRecord: 0.0ms | Allocations: 2018)
+
+
+Completed 200 OK in 112ms (Views: 3.2ms | ActiveRecord: 0.0ms | Allocations: 2643)
+
+
+Completed 200 OK in 96ms (Views: 1.2ms | ActiveRecord: 0.0ms | Allocations: 2789)
+
+
+Started GET "/" for ::1 at 2020-05-06 02:01:17 -0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 12.3ms | Allocations: 271)
+[Webpacker] Compiling…
+Started GET "/" for ::1 at 2020-05-06 02:01:31 -0500
+[Webpacker] Compiled all packs in /Users/cesaranasco/Documents/GitHub/covid/public/packs
+Completed 200 OK in 35256ms (Views: 35177.5ms | ActiveRecord: 0.0ms | Allocations: 14812)
+
+
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 2.4ms | Allocations: 173)
+Completed 200 OK in 61ms (Views: 49.0ms | ActiveRecord: 0.0ms | Allocations: 8266)
+
+
+Started GET "/site.css" for ::1 at 2020-05-06 02:01:56 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/site.css"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/user/symptoms" for ::1 at 2020-05-06 02:02:00 -0500
+Started GET "/api/user/quarantined_status" for ::1 at 2020-05-06 02:02:00 -0500
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-05-06 02:02:00 -0500
+Processing by Api::UsersController#not_quarantined_status as */*
+Processing by Api::UsersController#symptoms as */*
+Processing by Api::UsersController#quarantined_status as */*
+Completed 200 OK in 90ms (Views: 1.9ms | ActiveRecord: 0.0ms | Allocations: 2432)
+
+
+Completed 200 OK in 83ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 2328)
+
+
+Completed 200 OK in 69ms (Views: 1.2ms | ActiveRecord: 0.0ms | Allocations: 1751)
+
+
+Started GET "/" for ::1 at 2020-05-06 02:02:38 -0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 14.6ms | Allocations: 173)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/cesaranasco/Documents/GitHub/covid/public/packs
+Completed 200 OK in 25177ms (Views: 25170.5ms | ActiveRecord: 0.0ms | Allocations: 9725)
+
+
+Started GET "/site.css" for ::1 at 2020-05-06 02:03:06 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/site.css"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/user/symptoms" for ::1 at 2020-05-06 02:03:10 -0500
+Started GET "/api/user/quarantined_status" for ::1 at 2020-05-06 02:03:10 -0500
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-05-06 02:03:10 -0500
+Processing by Api::UsersController#not_quarantined_status as */*
+Processing by Api::UsersController#quarantined_status as */*
+Processing by Api::UsersController#symptoms as */*
+Completed 200 OK in 46ms (Views: 4.2ms | ActiveRecord: 0.0ms | Allocations: 1837)
+
+
+Completed 200 OK in 46ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 1817)
+
+
+Completed 200 OK in 64ms (Views: 13.7ms | ActiveRecord: 0.0ms | Allocations: 2467)
+
+
+Started GET "/" for ::1 at 2020-05-06 20:06:10 -0500
+  [1m[35m (25.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 4.6ms | Allocations: 569)
+Completed 200 OK in 4038ms (Views: 4018.9ms | ActiveRecord: 0.0ms | Allocations: 2158125)
+
+
+Started GET "/site.css" for ::1 at 2020-05-06 20:06:15 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/site.css"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/user/symptoms" for ::1 at 2020-05-06 20:06:17 -0500
+Started GET "/api/user/quarantined_status" for ::1 at 2020-05-06 20:06:17 -0500
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-05-06 20:06:17 -0500
+Processing by Api::UsersController#symptoms as */*
+Processing by Api::UsersController#quarantined_status as */*
+Processing by Api::UsersController#not_quarantined_status as */*
+Completed 200 OK in 10ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 2855)
+
+
+Completed 200 OK in 11ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 3001)
+
+
+Completed 200 OK in 12ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 3113)
+
+
+Started GET "/" for ::1 at 2020-05-07 03:42:03 -0500
+  [1m[35m (4.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 3.7ms | Allocations: 569)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/cesaranasco/Documents/GitHub/covid/public/packs
+Completed 200 OK in 36401ms (Views: 36357.5ms | ActiveRecord: 0.0ms | Allocations: 2156356)
+
+
+Started GET "/site.css" for ::1 at 2020-05-07 03:42:40 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/site.css"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/user/symptoms" for ::1 at 2020-05-07 03:42:42 -0500
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-05-07 03:42:42 -0500
+Started GET "/api/user/quarantined_status" for ::1 at 2020-05-07 03:42:42 -0500
+Processing by Api::UsersController#symptoms as */*
+Completed 200 OK in 28ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 2429)
+
+
+Processing by Api::UsersController#quarantined_status as */*
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 340)
+
+
+Processing by Api::UsersController#not_quarantined_status as */*
+Completed 200 OK in 5ms (Views: 1.1ms | ActiveRecord: 0.0ms | Allocations: 330)
+
+
+Started GET "/" for ::1 at 2020-05-07 03:43:11 -0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 0.9ms | Allocations: 175)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/cesaranasco/Documents/GitHub/covid/public/packs
+Completed 200 OK in 15281ms (Views: 15276.0ms | ActiveRecord: 0.0ms | Allocations: 9735)
+
+
+Started GET "/site.css" for ::1 at 2020-05-07 03:43:27 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/site.css"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-05-07 03:44:00 -0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 1.1ms | Allocations: 174)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/cesaranasco/Documents/GitHub/covid/public/packs
+Completed 200 OK in 17887ms (Views: 17884.4ms | ActiveRecord: 0.0ms | Allocations: 9714)
+
+
+Started GET "/site.css" for ::1 at 2020-05-07 03:44:19 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/site.css"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/user/symptoms" for ::1 at 2020-05-07 03:44:20 -0500
+Started GET "/api/user/quarantined_status" for ::1 at 2020-05-07 03:44:20 -0500
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-05-07 03:44:20 -0500
+Processing by Api::UsersController#symptoms as */*
+Processing by Api::UsersController#quarantined_status as */*
+Processing by Api::UsersController#not_quarantined_status as */*
+Completed 200 OK in 15ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 2173)
+
+
+Completed 200 OK in 13ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 2008)
+
+
+Completed 200 OK in 12ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 1903)
+
+
+Started GET "/" for ::1 at 2020-05-07 03:44:45 -0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 1.2ms | Allocations: 173)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/cesaranasco/Documents/GitHub/covid/public/packs
+Completed 200 OK in 17838ms (Views: 17834.1ms | ActiveRecord: 0.0ms | Allocations: 9705)
+
+
+Started GET "/site.css" for ::1 at 2020-05-07 03:45:03 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/site.css"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/user/symptoms" for ::1 at 2020-05-07 03:45:05 -0500
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-05-07 03:45:05 -0500
+Started GET "/api/user/quarantined_status" for ::1 at 2020-05-07 03:45:05 -0500
+Processing by Api::UsersController#symptoms as */*
+Processing by Api::UsersController#not_quarantined_status as */*
+Processing by Api::UsersController#quarantined_status as */*
+Completed 200 OK in 20ms (Views: 1.4ms | ActiveRecord: 0.0ms | Allocations: 2158)
+
+
+Completed 200 OK in 17ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 1991)
+
+
+Completed 200 OK in 16ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 1818)
+
+
+Started GET "/" for ::1 at 2020-05-07 03:47:42 -0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 1.4ms | Allocations: 173)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/cesaranasco/Documents/GitHub/covid/public/packs
+Completed 200 OK in 31431ms (Views: 31425.3ms | ActiveRecord: 0.0ms | Allocations: 9742)
+
+
+Started GET "/site.css" for ::1 at 2020-05-07 03:48:15 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/site.css"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/user/symptoms" for ::1 at 2020-05-07 03:48:16 -0500
+Started GET "/api/user/quarantined_status" for ::1 at 2020-05-07 03:48:16 -0500
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-05-07 03:48:16 -0500
+Processing by Api::UsersController#symptoms as */*
+Processing by Api::UsersController#quarantined_status as */*
+Processing by Api::UsersController#not_quarantined_status as */*
+Completed 200 OK in 14ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 2163)
+
+
+Completed 200 OK in 12ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 2003)
+
+
+Completed 200 OK in 12ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 1897)
+
+
+Started GET "/" for ::1 at 2020-05-07 03:50:41 -0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 1.1ms | Allocations: 173)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/cesaranasco/Documents/GitHub/covid/public/packs
+Completed 200 OK in 31287ms (Views: 31281.2ms | ActiveRecord: 0.0ms | Allocations: 9742)
+
+
+Started GET "/site.css" for ::1 at 2020-05-07 03:51:15 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/site.css"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/user/quarantined_status" for ::1 at 2020-05-07 03:51:17 -0500
+Started GET "/api/user/symptoms" for ::1 at 2020-05-07 03:51:17 -0500
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-05-07 03:51:17 -0500
+Processing by Api::UsersController#symptoms as */*
+Processing by Api::UsersController#quarantined_status as */*
+Processing by Api::UsersController#not_quarantined_status as */*
+Completed 200 OK in 65ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 2185)
+
+
+Completed 200 OK in 36ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 2099)
+
+
+Completed 200 OK in 76ms (Views: 8.0ms | ActiveRecord: 0.0ms | Allocations: 2846)
+
+
+Started GET "/" for ::1 at 2020-05-07 03:53:15 -0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 1.5ms | Allocations: 173)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/cesaranasco/Documents/GitHub/covid/public/packs
+Completed 200 OK in 28345ms (Views: 28337.8ms | ActiveRecord: 0.0ms | Allocations: 9726)
+
+
+Started GET "/site.css" for ::1 at 2020-05-07 03:53:44 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/site.css"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-05-07 03:53:47 -0500
+Started GET "/api/user/symptoms" for ::1 at 2020-05-07 03:53:47 -0500
+Started GET "/api/user/quarantined_status" for ::1 at 2020-05-07 03:53:47 -0500
+Processing by Api::UsersController#not_quarantined_status as */*
+Processing by Api::UsersController#quarantined_status as */*
+Processing by Api::UsersController#symptoms as */*
+Completed 200 OK in 47ms (Views: 3.0ms | ActiveRecord: 0.0ms | Allocations: 2102)
+
+
+Completed 200 OK in 44ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 2003)
+
+
+Completed 200 OK in 29ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 1752)
+
+
+Started GET "/" for ::1 at 2020-05-07 03:54:49 -0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 0.8ms | Allocations: 173)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/cesaranasco/Documents/GitHub/covid/public/packs
+Completed 200 OK in 18645ms (Views: 18639.4ms | ActiveRecord: 0.0ms | Allocations: 9706)
+
+
+Started GET "/site.css" for ::1 at 2020-05-07 03:55:09 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/site.css"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/user/quarantined_status" for ::1 at 2020-05-07 03:55:11 -0500
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-05-07 03:55:11 -0500
+Started GET "/api/user/symptoms" for ::1 at 2020-05-07 03:55:11 -0500
+Processing by Api::UsersController#not_quarantined_status as */*
+Processing by Api::UsersController#symptoms as */*
+Processing by Api::UsersController#quarantined_status as */*
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 337)
+
+
+Completed 200 OK in 26ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 2211)
+
+
+Completed 200 OK in 28ms (Views: 2.0ms | ActiveRecord: 0.0ms | Allocations: 2226)
+
+
+Started GET "/" for ::1 at 2020-05-07 04:00:09 -0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 17.1ms | Allocations: 267)
+Completed 200 OK in 232ms (Views: 210.1ms | ActiveRecord: 0.0ms | Allocations: 12170)
+
+
+Started GET "/site.css" for ::1 at 2020-05-07 04:00:09 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/site.css"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/user/symptoms" for ::1 at 2020-05-07 04:00:11 -0500
+Processing by Api::UsersController#symptoms as */*
+Completed 200 OK in 5ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 402)
+
+
+Started GET "/api/user/quarantined_status" for ::1 at 2020-05-07 04:00:11 -0500
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-05-07 04:00:11 -0500
+Processing by Api::UsersController#not_quarantined_status as */*
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 330)
+
+
+Processing by Api::UsersController#quarantined_status as */*
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 340)
+
+
+Started GET "/" for ::1 at 2020-05-07 04:00:44 -0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 8.0ms | Allocations: 169)
+Completed 200 OK in 189ms (Views: 164.1ms | ActiveRecord: 0.0ms | Allocations: 9782)
+
+
+Started GET "/site.css" for ::1 at 2020-05-07 04:00:45 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/site.css"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/user/symptoms" for ::1 at 2020-05-07 04:00:46 -0500
+Started GET "/api/user/quarantined_status" for ::1 at 2020-05-07 04:00:46 -0500
+Processing by Api::UsersController#symptoms as */*
+Completed 200 OK in 4ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 403)
+
+
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-05-07 04:00:46 -0500
+Processing by Api::UsersController#quarantined_status as */*
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 341)
+
+
+Processing by Api::UsersController#not_quarantined_status as */*
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 331)
+
+
+Started GET "/" for ::1 at 2020-05-07 04:02:11 -0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 1.4ms | Allocations: 173)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/cesaranasco/Documents/GitHub/covid/public/packs
+Completed 200 OK in 20390ms (Views: 20357.2ms | ActiveRecord: 0.0ms | Allocations: 9742)
+
+
+Started GET "/site.css" for ::1 at 2020-05-07 04:02:32 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/site.css"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/user/symptoms" for ::1 at 2020-05-07 04:02:35 -0500
+Processing by Api::UsersController#symptoms as */*
+Started GET "/api/user/quarantined_status" for ::1 at 2020-05-07 04:02:36 -0500
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-05-07 04:02:36 -0500
+Completed 200 OK in 51ms (Views: 1.2ms | ActiveRecord: 0.0ms | Allocations: 3046)
+
+
+Processing by Api::UsersController#not_quarantined_status as */*
+Completed 200 OK in 8ms (Views: 1.7ms | ActiveRecord: 0.0ms | Allocations: 330)
+
+
+Processing by Api::UsersController#quarantined_status as */*
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 340)
+
+
+Started GET "/" for ::1 at 2020-05-07 04:03:50 -0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 1.4ms | Allocations: 271)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/cesaranasco/Documents/GitHub/covid/public/packs
+Completed 200 OK in 11843ms (Views: 11840.9ms | ActiveRecord: 0.0ms | Allocations: 12296)
+
+
+Started GET "/site.css" for ::1 at 2020-05-07 04:04:03 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/site.css"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/user/symptoms" for ::1 at 2020-05-07 04:04:04 -0500
+Processing by Api::UsersController#symptoms as */*
+Started GET "/api/user/quarantined_status" for ::1 at 2020-05-07 04:04:04 -0500
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-05-07 04:04:04 -0500
+Completed 200 OK in 19ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 3619)
+
+
+Processing by Api::UsersController#quarantined_status as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 337)
+
+
+Processing by Api::UsersController#not_quarantined_status as */*
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 327)
+
+
+Started GET "/" for ::1 at 2020-05-07 04:05:20 -0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 1.0ms | Allocations: 173)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/cesaranasco/Documents/GitHub/covid/public/packs
+Completed 200 OK in 14947ms (Views: 14945.2ms | ActiveRecord: 0.0ms | Allocations: 12603)
+
+
+Started GET "/site.css" for ::1 at 2020-05-07 04:05:36 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/site.css"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/user/symptoms" for ::1 at 2020-05-07 04:05:37 -0500
+Started GET "/api/user/quarantined_status" for ::1 at 2020-05-07 04:05:37 -0500
+Processing by Api::UsersController#symptoms as */*
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-05-07 04:05:37 -0500
+Completed 200 OK in 32ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 1862)
+
+
+Processing by Api::UsersController#not_quarantined_status as */*
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 325)
+
+
+Processing by Api::UsersController#quarantined_status as */*
+Completed 200 OK in 3ms (Views: 1.5ms | ActiveRecord: 0.0ms | Allocations: 335)
+
+
+Started GET "/" for ::1 at 2020-05-07 04:05:55 -0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 8.4ms | Allocations: 163)
+Completed 200 OK in 163ms (Views: 146.3ms | ActiveRecord: 0.0ms | Allocations: 10236)
+
+
+Started GET "/site.css" for ::1 at 2020-05-07 04:05:56 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/site.css"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/user/symptoms" for ::1 at 2020-05-07 04:05:57 -0500
+Started GET "/api/user/quarantined_status" for ::1 at 2020-05-07 04:05:57 -0500
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-05-07 04:05:57 -0500
+Processing by Api::UsersController#quarantined_status as */*
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 333)
+
+
+Processing by Api::UsersController#not_quarantined_status as */*
+Processing by Api::UsersController#symptoms as */*
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 323)
+
+
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 394)
+
+
+Started GET "/" for ::1 at 2020-05-07 04:06:22 -0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 8.3ms | Allocations: 163)
+Completed 200 OK in 204ms (Views: 177.9ms | ActiveRecord: 0.0ms | Allocations: 11060)
+
+
+Started GET "/site.css" for ::1 at 2020-05-07 04:06:22 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/site.css"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/user/symptoms" for ::1 at 2020-05-07 04:06:23 -0500
+Processing by Api::UsersController#symptoms as */*
+Completed 200 OK in 4ms (Views: 0.9ms | ActiveRecord: 0.0ms | Allocations: 397)
+
+
+Started GET "/api/user/quarantined_status" for ::1 at 2020-05-07 04:06:23 -0500
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-05-07 04:06:23 -0500
+Processing by Api::UsersController#quarantined_status as */*
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 336)
+
+
+Processing by Api::UsersController#not_quarantined_status as */*
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 326)
+
+
+Started GET "/" for ::1 at 2020-05-07 04:07:06 -0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 7.3ms | Allocations: 163)
+Completed 200 OK in 117ms (Views: 100.8ms | ActiveRecord: 0.0ms | Allocations: 8153)
+
+
+Started GET "/site.css" for ::1 at 2020-05-07 04:07:06 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/site.css"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/user/quarantined_status" for ::1 at 2020-05-07 04:07:08 -0500
+Started GET "/api/user/symptoms" for ::1 at 2020-05-07 04:07:08 -0500
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-05-07 04:07:08 -0500
+Processing by Api::UsersController#not_quarantined_status as */*
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 319)
+
+
+Processing by Api::UsersController#symptoms as */*
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 390)
+
+
+Processing by Api::UsersController#quarantined_status as */*
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 329)
+
+
+Started GET "/" for ::1 at 2020-05-07 04:07:10 -0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 0.6ms | Allocations: 163)
+Completed 200 OK in 28ms (Views: 27.2ms | ActiveRecord: 0.0ms | Allocations: 8134)
+
+
+Started GET "/site.css" for ::1 at 2020-05-07 04:07:10 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/site.css"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/user/symptoms" for ::1 at 2020-05-07 04:07:11 -0500
+Processing by Api::UsersController#symptoms as */*
+Completed 200 OK in 3ms (Views: 1.4ms | ActiveRecord: 0.0ms | Allocations: 400)
+
+
+Started GET "/api/user/quarantined_status" for ::1 at 2020-05-07 04:07:11 -0500
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-05-07 04:07:11 -0500
+Processing by Api::UsersController#not_quarantined_status as */*
+Processing by Api::UsersController#quarantined_status as */*
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 339)
+
+
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 329)
+
+
+Started GET "/" for ::1 at 2020-05-07 04:07:20 -0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 6.0ms | Allocations: 164)
+Completed 200 OK in 114ms (Views: 96.0ms | ActiveRecord: 0.0ms | Allocations: 8124)
+
+
+Started GET "/site.css" for ::1 at 2020-05-07 04:07:20 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/site.css"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/user/symptoms" for ::1 at 2020-05-07 04:07:21 -0500
+Started GET "/api/user/quarantined_status" for ::1 at 2020-05-07 04:07:21 -0500
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-05-07 04:07:21 -0500
+Processing by Api::UsersController#symptoms as */*
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 395)
+
+
+Processing by Api::UsersController#not_quarantined_status as */*
+Processing by Api::UsersController#quarantined_status as */*
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 324)
+
+
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 334)
+
+
+Started GET "/" for ::1 at 2020-05-07 04:08:08 -0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 2.4ms | Allocations: 270)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/cesaranasco/Documents/GitHub/covid/public/packs
+Completed 200 OK in 27344ms (Views: 27330.7ms | ActiveRecord: 0.0ms | Allocations: 12771)
+
+
+Started GET "/site.css" for ::1 at 2020-05-07 04:08:36 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/site.css"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/user/symptoms" for ::1 at 2020-05-07 04:08:38 -0500
+Started GET "/api/user/quarantined_status" for ::1 at 2020-05-07 04:08:38 -0500
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-05-07 04:08:38 -0500
+Processing by Api::UsersController#quarantined_status as */*
+Processing by Api::UsersController#symptoms as */*
+Processing by Api::UsersController#not_quarantined_status as */*
+Completed 200 OK in 20ms (Views: 0.9ms | ActiveRecord: 0.0ms | Allocations: 2095)
+
+
+Completed 200 OK in 19ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 1999)
+
+
+Completed 200 OK in 18ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 1896)
+
+
+Started GET "/" for ::1 at 2020-05-07 04:09:17 -0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 6.5ms | Allocations: 169)
+Completed 200 OK in 120ms (Views: 107.4ms | ActiveRecord: 0.0ms | Allocations: 10239)
+
+
+Started GET "/site.css" for ::1 at 2020-05-07 04:09:17 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/site.css"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/user/symptoms" for ::1 at 2020-05-07 04:09:18 -0500
+Started GET "/api/user/quarantined_status" for ::1 at 2020-05-07 04:09:18 -0500
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-05-07 04:09:18 -0500
+Processing by Api::UsersController#symptoms as */*
+Processing by Api::UsersController#quarantined_status as */*
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 397)
+
+
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 336)
+
+
+Processing by Api::UsersController#not_quarantined_status as */*
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 326)
+
+
+Started GET "/" for ::1 at 2020-05-07 04:09:39 -0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 4.0ms | Allocations: 163)
+Completed 200 OK in 160ms (Views: 149.8ms | ActiveRecord: 0.0ms | Allocations: 10612)
+
+
+Started GET "/site.css" for ::1 at 2020-05-07 04:09:39 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/site.css"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/user/symptoms" for ::1 at 2020-05-07 04:09:40 -0500
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-05-07 04:09:40 -0500
+Started GET "/api/user/quarantined_status" for ::1 at 2020-05-07 04:09:40 -0500
+Processing by Api::UsersController#symptoms as */*
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 396)
+
+
+Processing by Api::UsersController#not_quarantined_status as */*
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 325)
+
+
+Processing by Api::UsersController#quarantined_status as */*
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 335)
+
+
+Started GET "/" for ::1 at 2020-05-07 04:10:36 -0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 8.7ms | Allocations: 163)
+Completed 200 OK in 138ms (Views: 127.7ms | ActiveRecord: 0.0ms | Allocations: 9771)
+
+
+Started GET "/site.css" for ::1 at 2020-05-07 04:10:37 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/site.css"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/user/symptoms" for ::1 at 2020-05-07 04:10:37 -0500
+Processing by Api::UsersController#symptoms as */*
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 397)
+
+
+Started GET "/api/user/quarantined_status" for ::1 at 2020-05-07 04:10:37 -0500
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-05-07 04:10:37 -0500
+Processing by Api::UsersController#not_quarantined_status as */*
+Completed 200 OK in 5ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 326)
+
+
+Processing by Api::UsersController#quarantined_status as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 336)
+
+
+Started GET "/" for ::1 at 2020-05-07 04:10:51 -0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 0.5ms | Allocations: 163)
+Completed 200 OK in 43ms (Views: 42.5ms | ActiveRecord: 0.0ms | Allocations: 9780)
+
+
+Started GET "/site.css" for ::1 at 2020-05-07 04:10:51 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/site.css"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/user/symptoms" for ::1 at 2020-05-07 04:10:52 -0500
+Started GET "/api/user/quarantined_status" for ::1 at 2020-05-07 04:10:52 -0500
+Processing by Api::UsersController#symptoms as */*
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 395)
+
+
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-05-07 04:10:52 -0500
+Processing by Api::UsersController#quarantined_status as */*
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 334)
+
+
+Processing by Api::UsersController#not_quarantined_status as */*
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 324)
+
+
+Started GET "/" for ::1 at 2020-05-07 04:11:00 -0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 1.5ms | Allocations: 163)
+Completed 200 OK in 67ms (Views: 65.7ms | ActiveRecord: 0.0ms | Allocations: 9781)
+
+
+Started GET "/site.css" for ::1 at 2020-05-07 04:11:00 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/site.css"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-05-07 04:11:01 -0500
+Started GET "/api/user/symptoms" for ::1 at 2020-05-07 04:11:01 -0500
+Started GET "/api/user/quarantined_status" for ::1 at 2020-05-07 04:11:01 -0500
+Processing by Api::UsersController#not_quarantined_status as */*
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 328)
+
+
+Processing by Api::UsersController#quarantined_status as */*
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 338)
+
+
+Processing by Api::UsersController#symptoms as */*
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 399)
+
+
+Started GET "/" for ::1 at 2020-05-07 04:11:10 -0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 0.3ms | Allocations: 163)
+Completed 200 OK in 36ms (Views: 35.4ms | ActiveRecord: 0.0ms | Allocations: 10234)
+
+
+Started GET "/site.css" for ::1 at 2020-05-07 04:11:10 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/site.css"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/user/quarantined_status" for ::1 at 2020-05-07 04:11:11 -0500
+Started GET "/api/user/symptoms" for ::1 at 2020-05-07 04:11:11 -0500
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-05-07 04:11:11 -0500
+Processing by Api::UsersController#quarantined_status as */*
+Processing by Api::UsersController#symptoms as */*
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 399)
+
+
+Processing by Api::UsersController#not_quarantined_status as */*
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 338)
+
+
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 328)
+
+
+Started GET "/" for ::1 at 2020-05-07 04:11:23 -0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 0.9ms | Allocations: 163)
+Completed 200 OK in 40ms (Views: 39.1ms | ActiveRecord: 0.0ms | Allocations: 8157)
+
+
+Started GET "/api/user/symptoms" for ::1 at 2020-05-07 04:11:23 -0500
+Started GET "/api/user/quarantined_status" for ::1 at 2020-05-07 04:11:23 -0500
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-05-07 04:11:23 -0500
+Processing by Api::UsersController#symptoms as */*
+Processing by Api::UsersController#quarantined_status as */*
+Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 393)
+
+
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 332)
+
+
+Processing by Api::UsersController#not_quarantined_status as */*
+Completed 200 OK in 6ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 322)
+
+
+Started GET "/" for ::1 at 2020-05-07 04:14:15 -0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 5.8ms | Allocations: 266)
+Completed 200 OK in 113ms (Views: 98.1ms | ActiveRecord: 0.0ms | Allocations: 9236)
+
+
+Started GET "/site.css" for ::1 at 2020-05-07 04:14:15 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/site.css"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/user/symptoms" for ::1 at 2020-05-07 04:14:18 -0500
+Started GET "/api/user/quarantined_status" for ::1 at 2020-05-07 04:14:18 -0500
+Processing by Api::UsersController#symptoms as */*
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-05-07 04:14:18 -0500
+Completed 200 OK in 3ms (Views: 1.5ms | ActiveRecord: 0.0ms | Allocations: 398)
+
+
+Processing by Api::UsersController#quarantined_status as */*
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 337)
+
+
+Processing by Api::UsersController#not_quarantined_status as */*
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 327)
+
+
+Started GET "/" for ::1 at 2020-05-07 04:16:07 -0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 2.6ms | Allocations: 270)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/cesaranasco/Documents/GitHub/covid/public/packs
+Completed 200 OK in 30753ms (Views: 30735.1ms | ActiveRecord: 0.0ms | Allocations: 10670)
+
+
+Started GET "/site.css" for ::1 at 2020-05-07 04:16:39 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/site.css"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/user/symptoms" for ::1 at 2020-05-07 04:16:41 -0500
+Started GET "/api/user/quarantined_status" for ::1 at 2020-05-07 04:16:41 -0500
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-05-07 04:16:41 -0500
+Processing by Api::UsersController#symptoms as */*
+Processing by Api::UsersController#quarantined_status as */*
+Processing by Api::UsersController#not_quarantined_status as */*
+Completed 200 OK in 40ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 1822)
+
+
+Completed 200 OK in 39ms (Views: 1.1ms | ActiveRecord: 0.0ms | Allocations: 1711)
+
+
+Completed 200 OK in 46ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 2767)
+
+
+Started GET "/" for ::1 at 2020-05-07 04:19:56 -0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 1.3ms | Allocations: 173)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/cesaranasco/Documents/GitHub/covid/public/packs
+Completed 200 OK in 25820ms (Views: 25795.2ms | ActiveRecord: 0.0ms | Allocations: 9734)
+
+
+Started GET "/site.css" for ::1 at 2020-05-07 04:20:23 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/site.css"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/user/symptoms" for ::1 at 2020-05-07 04:20:25 -0500
+Started GET "/api/user/quarantined_status" for ::1 at 2020-05-07 04:20:25 -0500
+Processing by Api::UsersController#symptoms as */*
+Processing by Api::UsersController#quarantined_status as */*
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-05-07 04:20:25 -0500
+Completed 200 OK in 34ms (Views: 1.1ms | ActiveRecord: 0.0ms | Allocations: 3171)
+
+
+Completed 200 OK in 29ms (Views: 1.5ms | ActiveRecord: 0.0ms | Allocations: 1843)
+
+
+Processing by Api::UsersController#not_quarantined_status as */*
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 322)
+
+
+Started GET "/" for ::1 at 2020-05-07 04:23:05 -0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 1.8ms | Allocations: 173)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/cesaranasco/Documents/GitHub/covid/public/packs
+Completed 200 OK in 15104ms (Views: 15100.5ms | ActiveRecord: 0.0ms | Allocations: 9692)
+
+
+Started GET "/site.css" for ::1 at 2020-05-07 04:23:22 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/site.css"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/user/symptoms" for ::1 at 2020-05-07 04:23:23 -0500
+Started GET "/api/user/quarantined_status" for ::1 at 2020-05-07 04:23:23 -0500
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-05-07 04:23:23 -0500
+Processing by Api::UsersController#symptoms as */*
+Completed 200 OK in 18ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 1701)
+
+
+Processing by Api::UsersController#not_quarantined_status as */*
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 322)
+
+
+Processing by Api::UsersController#quarantined_status as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 332)
+
+
+Started GET "/" for ::1 at 2020-05-07 04:23:28 -0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.erb within layouts/application
+  Rendered pages/index.erb within layouts/application (Duration: 2.8ms | Allocations: 163)
+Completed 200 OK in 76ms (Views: 72.6ms | ActiveRecord: 0.0ms | Allocations: 8119)
+
+
+Started GET "/site.css" for ::1 at 2020-05-07 04:23:29 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/site.css"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/user/symptoms" for ::1 at 2020-05-07 04:23:29 -0500
+Started GET "/api/user/quarantined_status" for ::1 at 2020-05-07 04:23:29 -0500
+Started GET "/api/user/not_quarantined_status" for ::1 at 2020-05-07 04:23:29 -0500
+Processing by Api::UsersController#symptoms as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 400)
+
+
+Processing by Api::UsersController#quarantined_status as */*
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 338)
+
+
+Processing by Api::UsersController#not_quarantined_status as */*
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 328)
+
+
