@@ -233,4 +233,4 @@ class Mabbox extends React.Component {
     }
 }
 
-ReactDOM.render(Mabbox, document.getElementById('Mapbox'));
+export default Mabbox
