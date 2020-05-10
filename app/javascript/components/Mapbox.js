@@ -1,19 +1,22 @@
 import React from "react";
 import mapboxgl from "mapbox-gl";
+import PatientForm from "./PatientForm";
 
 mapboxgl.accessToken = 'pk.eyJ1IjoiY2VzYXJhbmFzY28iLCJhIjoiY2s5NTcweDF2MDE2bjNmcDd0aTM0Z2wxNSJ9.gA4RpRVwx7GIeOpg0EtTPQ';
 
-class Mabbox extends React.Component {
+class Mapbox extends React.Component {
 
     constructor(props) {
         super(props);
         this.state = {
-            lng: -83.5560,
-            lat: -1.9309,
+            lng: -77.9769,
+            lat: -1.9269,
             zoom: 6,
             minZoom: 6,
-            southWest: (-91.0270,-0.3814),
-            northEast: (-75.1247,-1.7402),
+            maxZoom: 8,
+            bounds: [[-93.282,-8.438], // Southwest coordinates
+            [-68.684,4.296] // Northeast coordinates
+            ],
             provinceName: '',
             provinceId: 0,
             numberOfUsers: 0,
@@ -131,8 +134,16 @@ class Mabbox extends React.Component {
             style: 'mapbox://styles/cesaranasco/ck9eyep6w1cp51imwjhchmy0s',
             center: [this.state.lng, this.state.lat],
             zoom: this.state.zoom,
-            minZoom:  this.state.minZoom
+            minZoom:  this.state.minZoom,
+            maxZoom: this.state.maxZoom,
+            maxBounds: this.state.bounds
+
         });
+
+        var popup = new mapboxgl.Popup({
+            closeButton: false
+        });
+
         map.on('move', () => {
             this.setState({
                 lng: map.getCenter().lng.toFixed(4),
@@ -168,13 +179,23 @@ class Mabbox extends React.Component {
                 },
                 "filter": ["in", "name", ""]
             });
+            map.setFilter('states', ['in', 'adm0_a3', 'ECU']);
+            map.setFilter('states-highlighted', ['in', 'adm0_a3', 'ECU']);
             map.on('mousemove', (e) => {
                 var features = map.queryRenderedFeatures(e.point, {
                     layers: ['states']
+
+
+
                 });
                 var feature = features[0];
-                //console.log(feature.properties.name);
+                //console.log(feature);
                 map.setFilter('states-highlighted', ['in', 'name', feature.properties.name]);
+                popup
+                    .setLngLat(e.lngLat)
+                    .setText(feature.properties.name)
+                    .addTo(map);
+
             });
             map.on('click', (e)=>{
                 var features = map.queryRenderedFeatures(e.point, {
@@ -206,8 +227,8 @@ class Mabbox extends React.Component {
     render() {
         return (
             <div>
-                <div class='row'>
-                    <div class='column'>
+                <div className='row'>
+                    <div className='column'>
                         <div ref={el => this.mapContainer = el} className='mapContainer' >
                             <div className='sidebarStyle'>
                                 <div>Longitude: {this.state.lng} | Latitude: {this.state.lat} | Zoom: {this.state.zoom}</div>
@@ -215,7 +236,7 @@ class Mabbox extends React.Component {
 
                         </div>
                     </div>
-                    <div class='column'>
+                    <div className='column'>
                         <div className='mapOverlay'>
                             <div>
                                 <li>
@@ -233,4 +254,4 @@ class Mabbox extends React.Component {
     }
 }
 
-ReactDOM.render(Mabbox, document.getElementById('Mapbox'));
+export default Mapbox

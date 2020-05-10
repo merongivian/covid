@@ -187,7 +187,7 @@ class PatientForm extends React.Component {
     return (
         <div>
         <ul>
-          <label class="formLabel" htmlFor="formControlProvinces">Select a province:</label>
+          <label className="formLabel" htmlFor="formControlProvinces">Select a province:</label>
           <select name="provinces" className="form-control" id="formControlProvinces">
             {
               this.state.provinces.map(
@@ -204,7 +204,7 @@ class PatientForm extends React.Component {
           </select>
         </ul>
         <ul>
-          <label class="formLabel" htmlFor="formControlCities">Select a city:</label>
+          <label className="formLabel" htmlFor="formControlCities">Select a city:</label>
           <select name="cities" className="form-control" id="formControlCities">
 
             {
@@ -220,7 +220,7 @@ class PatientForm extends React.Component {
           </select>
         </ul>
         <ul>
-          <label class="formLabel" htmlFor="formControlNeighbourhoods">Seleccione un barrio:</label>
+          <label className="formLabel" htmlFor="formControlNeighbourhoods">Seleccione un barrio:</label>
             <select name="neighbourhoods" className="form-control" id="formControlNeighbourhoods">
               {
                 this.state.neighbourhoods.map(
@@ -252,7 +252,7 @@ class PatientForm extends React.Component {
                 })
               }}
           />
-          <label class="formLabel" htmlFor="">Are you currently in quarentine?</label>
+          <label className="formLabel" htmlFor="">Are you currently in quarentine?</label>
 
 
             {this.state.isUserInCuarentine === true ? (
@@ -261,9 +261,9 @@ class PatientForm extends React.Component {
                   <p>Select your quarentine status: </p>
                   {
                     this.state.quarantinedStatus.map(status =>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio"/>
-                          <label class="form-check-label" > {status}</label>
+                        <div className="form-check">
+                          <input className="form-check-input" type="radio"/>
+                          <label className="form-check-label" > {status}</label>
                         </div>
                     )
                   }
@@ -275,9 +275,9 @@ class PatientForm extends React.Component {
 
                   {
                     this.state.notQuarantinedStatus.map(status =>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio"/>
-                          <label class="form-check-label" > {status}</label>
+                        <div className="form-check">
+                          <input className="form-check-input" type="radio"/>
+                          <label className="form-check-label" > {status}</label>
                         </div>
                     )
                   }
@@ -289,16 +289,12 @@ class PatientForm extends React.Component {
     )
   }
 
-  renderMapbox() {
-    return <Mabbox />;
-  }
-
   render () {
     return (
 
-      <div id="myModal" class="modal fade" role="dialog">
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
+      <div id="myModal" className="modal fade" role="dialog">
+        <div className="modal-dialog modal-lg">
+          <div className="modal-content">
             <div className="modal-header">
               <h4 className="modal-title">  Report your health condition </h4>
               <button type="button" className="close" data-dismiss="modal">&times;</button>
@@ -307,7 +303,7 @@ class PatientForm extends React.Component {
         <form className="form" id="userRegisterForm">
           <div className="form-group">
             <ul>
-              <label htmlFor="formAge" class="formLabel">Your age</label>
+              <label htmlFor="formAge" className="formLabel">Your age</label>
               <input type="number" className="form-control" id="formAge" placeholder="..."/>
             </ul>
             <ul>
@@ -348,12 +344,12 @@ class PatientForm extends React.Component {
 
             </ul>
             <ul>
-              <label class="formLabel" htmlFor="">Symptoms you have experienced</label>
+              <label className="formLabel" htmlFor="">Symptoms you have experienced</label>
               <p>Select only the symptoms you have experienced</p>
               <ul>
                 {
                     this.state.symptoms.map(symptom =>
-                        <div class="form-check">
+                        <div className="form-check">
                           <input type="checkbox" className="form-check-input" />
                           <label className="form-check-label"> {symptom}</label>
                         </div>
