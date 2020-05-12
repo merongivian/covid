@@ -5,3 +5,14 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+province = Province.create!(name: 'Pichincha')
+
+quito = City.create!(province: province, name: 'Quito')
+City.create!(province: province, name: 'Machachi')
+City.create!(province: province, name: 'Los Chillos')
+City.create!(province: province, name: 'Cumbaya')
+
+Neighbourhood.create! name: 'Chillogallo', city: quito
+Neighbourhood.create! name: 'Itchimbia', city: quito
+Neighbourhood.create! name: 'El Inca', city: quito
