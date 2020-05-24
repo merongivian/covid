@@ -148,7 +148,9 @@ class PatientForm extends React.Component {
       //],
       provinces :[],
       cities :[],
+      citiesInProvince: [],
       neighbourhoods: [],
+      neighbourhoodsInCity: [],
       isProvinceSelected: false,
       isCitySelected: false,
       isUserInCuarentine: false,
@@ -184,38 +186,75 @@ class PatientForm extends React.Component {
 
   //}
 
+  setProvinceCities(provinceId) {
+
+    this.setState({
+      citiesInProvince:   this.state.cities.filter((e) => {
+          return e.province_id == provinceId
+        }
+
+      )
+    })
+
+
+  }
+
+  setCityNeighbourhoods(cityId){
+    this.setState({
+      neighbourhoodsInCity: this.state.neighbourhoods.filter( (e)=> {
+        return e.city_id == cityId
+      })
+    })
+  }
+
   renderProvinces() {
     return (
         <div>
         <ul>
           <label className="formLabel" htmlFor="formControlProvinces">Select a province:</label>
-          <select name="provinces" className="form-control" id="formControlProvinces">
+          <select name="provinces" className="form-control" id="formControlProvinces"
+
+            onChange={ (e)=> {
+              this.setProvinceCities(e.target.value);
+              this.setState ({
+                isProvinceSelected: true,
+                isCitySelected: false
+              })
+            }}
+
+          >
             {
               this.state.provinces.map(
                   province =>
                       <option
                           value={province.id}
-                          onClick={() =>
-                          {
-                            this.getCities(province.id)
-                          }}
-                      >{province.name}</option>
+                     >{province.name}</option>
               )
             }
           </select>
         </ul>
         <ul>
           <label className="formLabel" htmlFor="formControlCities">Select a city:</label>
-          <select name="cities" className="form-control" id="formControlCities">
+          <select name="cities" className="form-control" id="formControlCities"
+
+          onChange={ (e)=> {
+            this.setCityNeighbourhoods(e.target.value);
+            this.setState ({
+              isCitySelected: true
+            })
+          }}
+
+          >
 
             {
-              this.state.cities.map(
+              this.state.isProvinceSelected === true ? (
+              this.state.citiesInProvince.map(
                   citie =>
                       <option
                           value={citie.id}
-                          onClick={()=>
-                          {this.getNeighbourhoods(citie.id)}}
                       >{citie.name}</option>
+              ) ) : (
+                <option> ... </option>
               )
             }
           </select>
@@ -224,12 +263,16 @@ class PatientForm extends React.Component {
           <label className="formLabel" htmlFor="formControlNeighbourhoods">Seleccione un barrio:</label>
             <select name="neighbourhoods" className="form-control" id="formControlNeighbourhoods">
               {
-                this.state.neighbourhoods.map(
+                this.state.isCitySelected === true ? (
+                this.state.neighbourhoodsInCity.map(
                     neighbourhood =>
                         <option
                             value={neighbourhood.id}
                         >{neighbourhood.name}</option>
                 )
+              ) : (
+                <option>...</option>
+              )
               }
             </select>
 
@@ -251,6 +294,7 @@ class PatientForm extends React.Component {
                 this.setState({
                   isUserInCuarentine: !this.state.isUserInCuarentine
                 })
+                console.log('Click..!!');
               }}
           />
           <label className="formLabel" htmlFor="">Are you currently in quarentine?</label>
