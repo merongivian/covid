@@ -18,6 +18,9 @@ module Api
 
     def create
       user = User.new(user_params)
+      user.province = Province.find_by(name: 'Pichincha')
+      user.city = City.find_by(name: 'Quito')
+      user.neighbourhood = Neighbourhood.find_by(name: 'Chillogallo')
 
       if user.save!
         render json: { user: user }
@@ -41,10 +44,7 @@ module Api
         :smoking_habits,
         :temperature,
         :privacy_agreement,
-        :coordinates,
-        :province,
-        :city,
-        :neighbourhood
+        :coordinates
       )
     end
   end

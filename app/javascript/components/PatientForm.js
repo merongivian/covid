@@ -7,187 +7,44 @@ class PatientForm extends React.Component {
   static propTypes = {
     getSymptomsPath: PropTypes.string.isRequired,
     getQuarantinedStatusPath: PropTypes.string.isRequired,
-    getNotQuarantinedStatusPath: PropTypes.string.isRequired
+    getNotQuarantinedStatusPath: PropTypes.string.isRequired,
+    usersPath: PropTypes.string.isRequired
   }
 
   constructor(props) {
     super(props);
 
     this.state = {
-      symptoms: [],
-      quarantinedStatus: [],
-      notQuarantinedStatus: [],
-      //provinces: [
-        //{
-          //id: 1,
-          //name: 'Pichincha',
-          //cities: [
-            //{
-              //id: 1,
-              //name: 'Quito',
-              //neighbourhoods: [
-                //{
-                  //id: 1,
-                  //name: 'Chillogallo'
-                //},
-                //{
-                  //id: 2,
-                  //name: 'La tola'
-                //}
-              //]
-            //},
-            //{
-              //id: 2,
-              //name: 'Machachi',
-              //neighbourhoods: [
-                //{
-                  //id: 1,
-                  //name: 'Sunguyo'
-                //},
-                //{
-                  //id: 2,
-                  //name: 'La merced'
-                //}
-              //]
-            //}
-          //]
-        //},
-        //{
-          //id: 2,
-          //name: 'Guayas',
-          //cities: [
-            //{
-              //id: 1,
-              //name: 'Guayaquil',
-              //neighbourhoods: [
-                //{
-                  //id: 1,
-                  //name: 'Sauces'
-                //},
-                //{
-                  //id: 2,
-                  //name: 'La tejedora'
-                //}
-              //]
-            //},
-            //{
-              //id: 2,
-              //name: 'Salinas',
-              //neighbourhoods: [
-                //{
-                  //id: 1,
-                  //name: 'Loro'
-                //},
-                //{
-                  //id: 2,
-                  //name: 'La malta'
-                //}
-              //]
-            //}
-          //]
-
-        //},
-        //{
-          //id: 3,
-          //name: 'Manabi',
-          //cities: [
-            //{
-              //id: 1,
-              //name: 'Chone',
-              //neighbourhoods: [
-                //{
-                  //id: 1,
-                  //name: 'El guabal'
-                //},
-                //{
-                  //id: 2,
-                  //name: 'La reina'
-                //}
-              //]
-            //},
-            //{
-              //id: 2,
-              //name: 'Manta',
-              //neighbourhoods: [
-                //{
-                  //id: 1,
-                  //name: 'palta'
-                //},
-                //{
-                  //id: 2,
-                  //name: 'La cd'
-                //}
-              //]
-            //}
-          //]
-        //},
-        //{
-          //id: 4,
-          //name: 'Pastaza',
-          //cities: [
-            //{
-              //id: 1,
-              //name: 'Chillo',
-              //neighbourhoods: [
-                //{
-                  //id: 1,
-                  //name: 'merida'
-                //},
-                //{
-                  //id: 2,
-                  //name: 'La sasasas'
-                //}
-              //]
-            //},
-            //{
-              //id: 2,
-              //name: 'Misah'
-            //}
-            //]
-        //}
-      //],
-      provinces :[],
-      cities :[],
-      citiesInProvince: [],
-      neighbourhoods: [],
-      neighbourhoodsInCity: [],
+      user: {
+        age: 0,
+        sex: 'Male',
+        zip_code: '12345',
+        tested: false,
+        contact_with_sick_person: false,
+        symptoms: [],
+        with_severe_illness: false,
+        isolation_status: [],
+        smoking_habits: 'probably',
+        temperature: 35,
+        privacy_agreement: '',
+        coordinates: '',
+        province: 'Pichincha',
+        city: 'Quito',
+        neighbourhood: 'Chillogallo',
+      },
       isProvinceSelected: false,
       isCitySelected: false,
       isUserInCuarentine: false,
+      symptoms: [],
+      quarantinedStatus: [],
+      notQuarantinedStatus: [],
+      provinces :[],
+      cities :[],
+      neighbourhoods: [],
     }
   }
 
-  //getCities(provinceId) {
-    //this.state.provinces.map(
-        //provinces => {
-          //if(provinces.id == provinceId){
-            //const cities = provinces.cities;
-            //this.setState({
-              //cities:cities,
-              //isProvinceSelected: true
-            //});
-          //}
-        //}
-    //)
-  //}
-
-  //getNeighbourhoods(citieId){
-    //this.state.cities.map(
-        //cities => {
-          //if(cities.id == citieId){
-            //const neighbourhoods = cities.neighbourhoods;
-            //this.setState({
-              //neighbourhoods:neighbourhoods,
-              //isCitySelected: true
-            //});
-          //}
-        //}
-    //)
-
-  //}
-
   setProvinceCities(provinceId) {
-
     this.setState({
       citiesInProvince:   this.state.cities.filter((e) => {
           return e.province_id == provinceId
@@ -195,8 +52,6 @@ class PatientForm extends React.Component {
 
       )
     })
-
-
   }
 
   setCityNeighbourhoods(cityId){
@@ -349,7 +204,12 @@ class PatientForm extends React.Component {
           <div className="form-group">
             <ul>
               <label htmlFor="formAge" className="formLabel">Your age</label>
-              <input type="number" className="form-control" id="formAge" placeholder="..."/>
+              <input type="number" className="form-control" id="formAge" placeholder="..." onChange={event => {
+                  let user = {...this.state.user};
+                  user.age = parseInt(event.target.value);
+                  this.setState({user})
+                }
+              }/>
             </ul>
             <ul>
               <label className="formLabel" htmlFor="">Gender</label>
@@ -419,7 +279,7 @@ class PatientForm extends React.Component {
         </form>
             </div>
             <div className="modal-footer">
-              <button type="submit" className="btn btn-primary">Submit</button>
+              <button type="submit" className="btn btn-primary" onClick={this.addPatient}>Submit</button>
             </div>
           </div>
         </div>
@@ -435,6 +295,22 @@ class PatientForm extends React.Component {
     this.getCities();
     this.getNeighbourhoods();
   }
+
+  addPatient = () => {
+    $.ajax({
+      url: this.props.usersPath,
+      method: 'POST',
+      headers: {'X-CSRF-Token': $('meta[name="csrf-token"]').attr("content")},
+      data: {user: this.state.user}
+    }).done((response) => {
+      //this.props.closeModal(response);
+    }).fail((response) => {
+      console.log(response.responseJSON.error)
+      this.setState({
+        errors: response.responseJSON.error
+      })
+    })
+  };
 
   getSymptoms = () => {
     $.get(this.props.getSymptomsPath).then((symptoms) => {
