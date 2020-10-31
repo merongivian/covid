@@ -15,7 +15,7 @@ class Mapbox extends React.Component {
             minZoom: 6,
             maxZoom: 8,
             bounds: [[-93.282,-8.438], // Southwest coordinates
-            [-68.684,4.296] // Northeast coordinates
+                [-68.684,4.296] // Northeast coordinates
             ],
             provinceName: '',
             provinceId: 0,
@@ -207,6 +207,14 @@ class Mapbox extends React.Component {
                     provinceId: feature.id,
                 });
                 this.getProvinceStatistics();
+
+                alert( 'Province Name: ' + this.state.provinceName
+                        + '\nNumber of Users: ' + this.state.numberOfUsers
+                        + '\nNumber of Tested Users: ' + this.state.numberOfTestedUsers
+                        + '\nNumber of Confirmed Positive Users: ' + this.state.numberOfConfirmedUsers);
+
+                
+
             });
         });
     }
@@ -236,18 +244,18 @@ class Mapbox extends React.Component {
 
                         </div>
                     </div>
-                    <div className='column'>
-                        <div className='mapOverlay'>
-                            <div>
-                                <li>
-                                    <ul>Province Name: {this.state.provinceName}</ul>
-                                    <ul>Number of Users: {this.state.numberOfUsers}</ul>
-                                    <ul>Number of Tested Users: {this.state.numberOfTestedUsers}</ul>
-                                    <ul>Number of Confirmed Users: {this.state.numberOfConfirmedUsers}</ul>
-                                </li>
-                            </div>
-                        </div>
-                    </div>
+                    {/*<div className='column'>*/}
+                    {/*    <div className='mapOverlay'>*/}
+                    {/*        <div>*/}
+                    {/*            <li>*/}
+                    {/*                <ul>Province Name: {this.state.provinceName}</ul>*/}
+                    {/*                <ul>Number of Users: {this.state.numberOfUsers}</ul>*/}
+                    {/*                <ul>Number of Tested Users: {this.state.numberOfTestedUsers}</ul>*/}
+                    {/*                <ul>Number of Confirmed Users: {this.state.numberOfConfirmedUsers}</ul>*/}
+                    {/*            </li>*/}
+                    {/*        </div>*/}
+                    {/*    </div>*/}
+                    {/*</div>*/}
                 </div>
             </div>
         )
