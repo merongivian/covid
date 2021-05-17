@@ -40,3 +40,16 @@ yarn-debug.log*
 dump.rdb
 
 elasticsearch-7.6.1/
+node_modules/@types/node/base.d.ts
+node_modules/.bin/nopt
+node_modules/.bin/nopt
+node_modules/.bin/nopt
+node_modules/.bin/nopt
+node_modules/.bin/nopt
+node_modules/.bin/nopt
+node_modules/.yarn-integrity
+node_modules/.yarn-integrity
+node_modules/.yarn-integrity
+node_modules/.bin/nopt
+node_modules/caniuse-lite/data/features/calc.js
+*.js
